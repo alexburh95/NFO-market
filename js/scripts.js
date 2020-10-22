@@ -1,0 +1,65 @@
+var mySwiper = new Swiper('.swiper1', {
+    // Optional parameters
+    direction: 	`horizontal`,
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    
+  })
+
+  var mySwiper = new Swiper('.swiper2', {
+    // Optional parameters
+    direction: 	`horizontal`,
+    loop: true,
+    slidesPerView: 4,
+    spaceBetween: 30,
+    autoplay: {
+        delay: 5000,
+      },
+  
+    // If we need pagination
+   
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-nexti',
+      prevEl: '.swiper-button-previ',
+    },
+  
+    // And if we need scrollbar
+    
+  })
+
+  var mySwiper = new Swiper('.swiper3', {
+    // Optional parameters
+    direction: 	`horizontal`,
+    loop: true,
+    slidesPerView: 2,
+    spaceBetween: 30,
+   /* autoplay: {
+        delay: 5000,
+      },
+      */
+    // If we need pagination
+   
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-nexti',
+      prevEl: '.swiper-button-previ',
+    },
+  
+    // And if we need scrollbar
+    
+  })

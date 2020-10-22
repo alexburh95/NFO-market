@@ -8,9 +8,7 @@ header a{
     color: #202945;
 }
 
-.container, .container-fluid{
-    max-width: 1440px;
-}
+
 
 header .row{
     align-items: center;
@@ -734,4 +732,10 @@ line-height: 16px;
 color: #FFFFFF;
 
 transform: rotate(0.14deg);
+}
+
+@media (min-width: 1445px){
+    .container, .container-fluid{
+        max-width: 1440px;
+    }
 }

@@ -4,11 +4,18 @@ body {
      font-family: 'Montserrat', sans-serif;;
     font-weight: 400;
 }
+
+a:hover{
+    text-decoration: none;
+    color: inherit;
+}
 header a{
     color: #202945;
 }
 
-
+header img{
+    object-fit: none;
+}
 
 header .row{
     align-items: center;
@@ -38,13 +45,37 @@ text-align: center;
 text-transform: uppercase;
 
 color: #202945;
+position: relative;
+}
+.menu__item a:hover{
+    text-decoration:none;
+}
+.mailing input[type='email']:focus{
+    outline: none;
+}
+.menu__item:hover::after{
+    content: "";
+    position: absolute;
+    color: #202945;
+    width: 100%;
+    height: 2px;
+    background-color: #202945;
+    top: 80px;
+}
+.konsulat .vitamin__h2{
+    padding-bottom: 100px;
 }
 
+.swiper-button-previ img{
+    transform: rotate(-180deg);
+
+}
 
 .znackki{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    margin-top: 14px;
 }
 
 .header__znacki{
@@ -61,6 +92,7 @@ padding-right: 38px;
     background-repeat:no-repeat;
     background-size: cover;
     background-position: center;
+   
 }
 
 
@@ -169,6 +201,10 @@ margin-left: 20px;
 .salehits .icon{
     margin-right:20px;
 }
+.salehits__item:hover .icon{
+    margin-right: 10px;
+
+}
 
 .hits__bank{
     margin: 0 auto;
@@ -190,13 +226,13 @@ font-weight: 600;
 font-size: 16px;
 line-height: 20px;
 /* or 125% */
-padding-left: 2px;
+padding-left: 10px;
 
 color: #202945;
 }
 .sales{
-    display: flex;
-    padding-left: 2px;
+ 
+    padding-left: 10px;
     align-items: center;
 }
 .new_price{
@@ -341,7 +377,7 @@ color: #202945;
     padding-top: 110px;
 }
 
-.vitamin img{
+.vitamin img:not(.iconka){
     width: 100%;
 }
 .container-fluid{
@@ -596,6 +632,9 @@ align-items: flex-end;
 
 color: #FFFFFF;
 }
+.mailing input[type='email']:focus{
+    outline: none;
+}
 
 .mailing input[type='email']{
     font-style: normal;
@@ -612,7 +651,7 @@ color: #FFFFFF;
     border-bottom: 0.5px solid #FFFFFF;
 }
 
-.mailing input[type='submit']{
+.mailing button[type='submit']{
     background: #FFFFFF;
     border: 50%;
     width: 40px;
@@ -633,6 +672,7 @@ footer{
     background: #202945;
     padding-top: 60px;
     padding-bottom:50px;
+    color:  #ffffff;
 }
 
 .footer__contacts{
@@ -668,7 +708,9 @@ footer input[type='search']{
     border: none;
     border-bottom: 0.5px solid #FFFFFF;
 }
-
+footer input[type='search']{
+    outline: none;
+}
 footer button{
     color: #FFFFFF;
     background: none;
@@ -733,9 +775,103 @@ color: #FFFFFF;
 
 transform: rotate(0.14deg);
 }
+.error_404{
+    font-style: normal;
+font-weight: bold;
+font-size: 144px;
+line-height: 40px;
+/* identical to box height, or 28% */
+
+letter-spacing: 0.01em;
+text-transform: uppercase;
+
+color: #202945;
+padding-top: 250px;
+}
+
+.error_description{
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+/* or 125% */
+
+padding-top: 50px;
+color: #202945;
+}
+.error_description a{
+    text-decoration: underline;
+    color: #8897B2;
+}
+.main_a{
+    font-size: 11px;
+line-height: 15px;
+/* identical to box height, or 136% */
+
+display: flex;
+align-items: flex-end;
+text-transform: uppercase;
+
+color: #202945;
+display: flex;
+    align-items: center;
+    padding-top: 45px;
+    padding-bottom:260px;
+}
+.img_fish{
+    position: absolute;
+    left: 13%;
+    z-index: -1;
+    top: 0px;
+}
+
+.catalog__title{
+    font-weight: 600;
+font-size: 32px;
+line-height: 40px;
+/* or 125% */
+
+text-align: center;
+letter-spacing: 0.01em;
+text-transform: uppercase;
+
+color: #202945;
+padding-top: 90px;
+}
+
+.all_products{
+    font-size: 12px;
+line-height: 15px;
+/* identical to box height, or 125% */
+
+text-align: right;
+
+color: #202945;
+}
+
+.catalog select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
 
 @media (min-width: 1445px){
     .container, .container-fluid{
         max-width: 1440px;
+    }
+}
+
+@media only screen and (max-width:1370px){
+    .main_slider .swiper-slide{
+        background-size: contain;
+      
+        background-position: unset;
+        height: 780px;
+    }
+    .menu__item {
+        padding-top: 6%;
+    }
+    .header__znacki {
+        padding-top: 16%;
     }
 }

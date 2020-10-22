@@ -18,7 +18,7 @@ var mySwiper = new Swiper('.swiper1', {
     
   })
 
-  var mySwiper = new Swiper('.swiper2', {
+  window.mySwiper2 = new Swiper('.swiper2', {
     // Optional parameters
     direction: 	`horizontal`,
     loop: true,
@@ -26,6 +26,17 @@ var mySwiper = new Swiper('.swiper1', {
     spaceBetween: 30,
     autoplay: {
         delay: 5000,
+      },
+      on: {
+        init() {
+          this.el.addEventListener('mouseenter', () => {
+            this.autoplay.stop();
+          });
+    
+          this.el.addEventListener('mouseleave', () => {
+            this.autoplay.start();
+          });
+        }
       },
   
     // If we need pagination
@@ -41,7 +52,9 @@ var mySwiper = new Swiper('.swiper1', {
     
   })
 
-  var mySwiper = new Swiper('.swiper3', {
+
+
+  var mySwiper3 = new Swiper('.swiper3', {
     // Optional parameters
     direction: 	`horizontal`,
     loop: true,

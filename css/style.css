@@ -8,6 +8,10 @@ header a{
     color: #202945;
 }
 
+.container, .container-fluid{
+    max-width: 1440px;
+}
+
 header .row{
     align-items: center;
 }

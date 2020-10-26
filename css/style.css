@@ -15,7 +15,8 @@ a:hover{
   }
   
 header{
-    border-bottom: 0.5px solid
+    border-bottom: 0.5px solid #C3C9CF;
+    background: #ffffff;
 }
 a{
     color: inherit;
@@ -25,6 +26,9 @@ header a{
 }
 a svg:hover .shop{
     stroke: #8897B3;
+}
+header a svg:hover .like{
+    fill: none;
 }
 a svg:hover .like
 { 
@@ -85,7 +89,7 @@ position: relative;
     width: 100%;
     height: 2px;
     background-color: #202945;
-    top: 91px;
+    top: 93px;
 }
 .konsulat .vitamin__h2{
     padding-bottom: 100px;
@@ -229,6 +233,10 @@ margin-left: 20px;
 }
 .salehits__item:hover .icon{
     margin-right: 10px;
+
+}
+.salehits__item:hover .icon.like{
+    margin-right: 20px;
 
 }
 .catalog_main .hits__title{
@@ -405,6 +413,15 @@ text-transform: uppercase;
 
 color: #202945;
 }
+.socseti svg{
+    margin-top: 60px;
+    margin-bottom: 170px;
+}
+.socseti:hover svg path{
+    fill:  #8897B3;
+}
+footer a:hover{
+    color: #8897B2;}
 .catalog:hover{
     color: #8897B3;
 }
@@ -620,7 +637,7 @@ color: #202945;
 .rovno{
     display: flex;
     align-items: center;
-    justify-content:center;
+   
 }
 
  .line {
@@ -784,7 +801,15 @@ margin-top: 55px;
 
     font-size: 20px;
 }
+.mailing button[type='submit']:hover{
+background-color: #8897B3;
 
+}
+.mailing button[type='submit']:hover svg{
+    margin: 0;
+  
+    stroke: #202945;
+} 
 
 .mailing_form{
     display: flex;
@@ -817,6 +842,15 @@ footer img{
 
 .row.align{
     align-items: center;
+}
+footer input[type='search']:hover{
+    border-bottom: 0.5px solid  #8897B3;
+}
+.mailing_form:hover svg path{
+    stroke:  #8897B3
+}
+.catalog:hover svg path{
+    stroke: #202945;
 }
 footer input[type='search']{
     font-style: normal;
@@ -944,7 +978,7 @@ display: flex;
 }
 .img_fish{
     position: absolute;
-    left: 13%;
+    right: 0;
     z-index: -1;
     top: 0px;
 }
@@ -1120,17 +1154,67 @@ justify-content:space-between
 margin-right: 20px;
 }
 
-.sitebar_menu p{
+.sitebar_menu span{
     font-style: normal;
 font-weight: normal;
 font-size: 12px;
 line-height: 20px;
 /* identical to box height, or 167% */
-
+display: flex;
+align-items: center;
 
 color: #202945;
 
 }
+
+.sitebar_menu span:hover{
+    color: #8897B2;
+cursor: pointer;
+}
+
+.sitebar_menu label{
+display: block;
+}
+[type="radio"] + span:before {
+    content:"";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    vertical-align: -0.25em;
+    border-radius: 1em;
+    
+    box-shadow: 0 0 0 0.15em #000;
+    margin-right: 0.75em;
+    transition: 0.5s ease all;
+    margin-right: 20px;
+  }
+  
+  /* the checked style using the :checked pseudo class */
+  [type="radio"]:checked + span:before {
+    background: #202945;
+   
+  }
+  .sitebar_menu label:hover [type="radio"] + span:before {
+    background: #8897B3;
+    box-shadow: 0 0 0 0.15em #8897B3;
+   
+  }
+  .sitebar_menu label:hover   [type="radio"]:checked + span:before {
+    background: #202945;
+    box-shadow: 0 0 0 0.15em #000;
+  }
+  [type="radio"] {
+    border: 0; 
+    clip: rect(0 0 0 0); 
+    height: 1px; margin: -1px; 
+    overflow: hidden; 
+    padding: 0; 
+    position: absolute; 
+    width: 1px;
+  }
+  /* never forget focus styling */
+ 
+
 .sitebar_item:hover{
     cursor: pointer;
 }
@@ -1154,7 +1238,7 @@ font-weight: 600;
 font-size: 20px;
 line-height: 25px;
 /* or 125% */
-
+margin-top: 70px;
 padding-top: 16px;
 padding-bottom: 20px;
 color: #202945;
@@ -1189,8 +1273,11 @@ text-transform: uppercase;
 
 color: #202945;
 }
+.to_cart:hover svg{
+    margin-left: 9px;
+}
 
-.catalog_item .container{
+.catalog_item .container-fluid{
     padding-top: 120px;
 }
 .parametr{
@@ -1253,6 +1340,11 @@ text-decoration: line-through;
 color: #7B8797;
 margin-right: 5px;
 }
+
+.hashtag:hover{
+    background: #8897B3;
+    color: #ffffff;
+}
 .to_cart{
     font-style: normal;
     font-weight: normal;
@@ -1261,14 +1353,16 @@ margin-right: 5px;
     display: flex;
     align-items: center;
     text-transform: uppercase;
-    justify-content: center;
+    padding-left: 20px;
     color: #FFFFFF;
     background: #202945;
     width: 190px;
     height: 45px;
     margin-right: 30px;
 }
-
+#tab3{
+    padding-bottom: 80px;
+}
 .to_cart:hover {
     text-decoration: none;
     color: #ffffff;

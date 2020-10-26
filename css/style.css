@@ -834,7 +834,13 @@ line-height: 40px;
 
 color: #FFFFFF;
 }
-
+.scroll_sitebar{
+    position: fixed;
+    width: 270px;
+    z-index: 99999;
+    background-color: white;
+    padding: 20px;
+}
 footer img{
     margin-top: 60px;
     margin-bottom: 170px;

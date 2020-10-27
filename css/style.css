@@ -148,20 +148,7 @@ padding-top: 240px;
 }
 
 .slider__button{
-    font-style: normal;
-font-weight: normal;
-font-size: 11px;
-line-height: 15px;
-/* or 136% */
-
-display: flex;
-align-items: center;
-text-transform: uppercase;
-justify-content: center;
-color: #FFFFFF;
-background: #202945;
-width: 190px;
-height: 45px;
+  
 margin-top: 60px;
 }
 

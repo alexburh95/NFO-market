@@ -1,13 +1,5 @@
 "use strict";
-const slash =(evt, choosenClass ) =>{
-    evt.addEventListener('click', function() {
 
-      
- choosenClass.classList.toggle('hidden');
- const arrow = evt.querySelector('.down');
-  arrow.classList.toggle('up');
-    });
-}
 const first = document.querySelector('.first_sort');
 const firstMenu = document.querySelector('.include_form')
 
@@ -16,9 +8,10 @@ const secondMenu = document.querySelector('.include_form2')
 const third = document.querySelector('.third_sort');
 const thirdMenu = document.querySelector('.include_form3')
 
-slash(first, firstMenu);
-slash(second, secondMenu)
-slash(third, thirdMenu)
+
+window.slash(first, firstMenu);
+window.slash(second, secondMenu)
+window.slash(third, thirdMenu)
 
 const big_photo = document.querySelector('.big_photo');
 console.log(big_photo);

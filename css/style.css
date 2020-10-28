@@ -41,6 +41,9 @@ a svg:active .like
   fill:#202945;
   stroke: #202945;
 }
+.fat{
+    font-weight: 600 !important;
+}
 
 header img{
     object-fit: none;
@@ -197,6 +200,151 @@ height: 30px;
 .salehits{
     position: relative;
 }
+.special_row{
+    align-items: center;
+    padding: 30px 0;
+    border-bottom: 0.5px solid #C3C9CF; 
+    margin: 0;
+}
+.col-lg-2.ikonki{
+    text-align: right;
+}
+.special_row .comboset{
+    margin-bottom:15px;
+}
+
+.col-lg-2.ikonki svg{
+    margin-right:13px;
+}
+.punkt_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F8F8F8;
+    height: 120px;
+
+    padding: 0 30px;
+}
+
+.punkt__title{
+    font-style: normal;
+font-weight: 600;
+font-size: 20px;
+/* identical to box height, or 125% */
+
+text-transform: uppercase;
+
+color: #202945;
+}
+
+.perecluch button{
+    outline: none;
+    border: none;
+    background: inherit;
+}
+.perecluch{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.grey_fon{
+    background: #F8F8F8;
+    margin-bottom: 20px;
+}
+.information{
+    padding: 0 60px;
+}
+
+.information input::placeholder {
+    color: #202945;
+}
+
+
+.information input{
+    font-style: normal;
+    font-weight: normal;
+  
+    display: flex;
+    align-items: flex-end;
+    font-size: 16px;
+    color: #202945;
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 0.5px solid #202945;
+    margin-bottom:40px;
+}
+.continue{
+    margin-left: 60px;
+    margin-top: 64px;
+    margin-bottom: 15px;
+
+}
+.include_punk_content3{
+    padding-bottom: 15px;
+}
+.include_punk_content4 input{
+    width: 100%;
+    font-style: normal;
+font-weight: normal;
+font-size: 11px;
+line-height: 15px;
+background: none;
+    border: none;
+/* identical to box height, or 136% */
+border-bottom: 0.5px solid #202945;;
+display: flex;
+align-items: flex-end;
+text-transform: uppercase;
+margin-top: 40px;
+
+
+color: #7B8797;
+
+}
+.checks{
+    padding-left: 30px;
+    margin-top: 34px;
+  
+}
+
+.delivery_container .checks span{
+    color: #707c8b;
+}
+.delivery_container_form{
+    padding : 0 60px;
+}
+.delivery_container{
+ 
+    padding: 0 30px;
+}
+
+.delivery_paragraf{
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+
+/* identical to box height, or 125% */
+
+
+color: #202945;
+}
+.delivery_container  span {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #202945;
+}
+.punkt_container:hover{
+    cursor: pointer;
+}
+
+.items_in_cart{
+    padding: 30px 0;
+   
+}
 .discount{
     background: #202945;
     font-style: normal;
@@ -215,11 +363,29 @@ height: 30px;
 margin-left: 20px;
 }
 
+.order__title{
+    font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 40px;
+/* identical to box height, or 125% */
+
+text-align: center;
+letter-spacing: 0.01em;
+text-transform: uppercase;
+
+color: #202945;
+margin : 80px 0;
+}
+
 .salehits .container-fluid{
     padding: 0 75px; 
 }
 
 .salehits .icon, .catalog_main .icon{
+    margin-right:20px;
+}
+.recomendation .icon, .catalog_main .icon{
     margin-right:20px;
 }
 .salehits__item:hover .icon{
@@ -1250,12 +1416,170 @@ display: block;
     transition: 0.5s ease all;
     margin-right: 20px;
   }
+    [type="radio"]:checked + span {
+    font-weight: 600;
+}
+.checks [type="checkbox"]:checked + span {
+    font-weight: 600;
+    color: #202945;
+}
+.include_punk_content2 .delivery_container [type="checkbox"]:checked + span {
+    font-weight: 600;
+    color: #202945;
+}
+.include_punk_content4{
+    padding-bottom: 16px;
+}
   
   /* the checked style using the :checked pseudo class */
   [type="radio"]:checked + span:before {
     background: #202945;
    
   }
+  .bonus_ball{
+      padding: 25px 30px;
+      background: #E6EAEE;
+margin: 35px 0;
+  }
+
+  .include_punk_content2 .delivery_container .meloch{
+    font-size: 12px;
+  }
+  .add_to_zakaz{
+      margin-top: 200px;
+  }
+  .recomendation{
+      margin-top:85px;
+      padding-bottom: 200px;
+  }
+  .row_summ{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  .finish_description{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+    
+    
+    color: #202945;
+  }
+  .row_knopka{
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+      justify-content:space-between;
+      margin-bottom: 10px;
+  }
+ .row_knopka p{
+     margin-bottom: 0%;
+ }
+
+.finish_itog{
+    font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 25px;
+/* or 125% */
+
+
+color: #202945;
+}
+.ciferka{
+    position: relative;
+}
+.ciferka::after{
+    content: "1";
+    position: absolute;
+    width:15px;
+    height: 15px;border-radius: 50%;
+    background-color: #202945;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+    top: 50%;
+    right: -5px;
+}
+.row_summ.bigs{
+    margin-top: 130px;
+}
+
+.finish_zakaz .catalog.to_cart{
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+  .finish_zakaz{
+      padding: 40px 30px;
+      background: #F8F8F8;
+  }
+
+  .recomendation_title{
+  
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    /* or 125% */
+    
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom:40px;
+    color: #202945;}
+.add_to_zakaz .align::after{
+    content: "";
+    height: 0.5px;
+    background-color: #C3C9CF;
+    width: 78%;
+    top: 10px;
+    margin: 10px;
+    margin-left: 9.5%;
+}
+  .add_to_zakaz .align{
+      margin: 19px 0;
+      position: relative;
+  }
+
+  .add_to_zakaz__title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    /* or 125% */
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    
+    color: #202945;
+  }
+  .bonus_ball a{
+    margin-left: 80%;
+  }
+  .bonus_ball_description{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    /* or 125% */
+    
+    
+    color: #202945;
+  }
+  .bonus_ball_title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    /* identical to box height, or 125% */
+    
+    
+    color: #202945;
+  }
+ 
   [type="checkbox"]:checked + span:before {
     background: #202945;
    

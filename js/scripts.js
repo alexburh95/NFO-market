@@ -88,3 +88,8 @@ var mySwiper = new Swiper('.swiper1', {
     });
 }
 
+
+let sticky = new Sticky('.header_main');
+
+
+

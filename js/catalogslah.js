@@ -14,16 +14,16 @@ window.slash(second, secondMenu)
 window.slash(third, thirdMenu)
 
 const big_photo = document.querySelector('.big_photo');
-console.log(big_photo);
+
 
 const tik = document.querySelector('.sort_title');
-const arrow = document.querySelector('.down');
+window.arrow = document.querySelector('.down');
 const chtcks = document.querySelector('.checkin')
-console.log(tik);
-const popup = document.querySelector('.hidden_menu')
+
+window.popup = document.querySelector('.hidden_menu')
 tik.addEventListener('click', function() {
 
     chtcks.classList.toggle('invisible_div')
-popup.classList.toggle('hidden');
-arrow.classList.toggle('up');
+window.popup.classList.toggle('hidden');
+window.arrow.classList.toggle('up');
 });

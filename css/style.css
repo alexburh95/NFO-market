@@ -1712,7 +1712,11 @@ color: #FFFFFF;
     font-weight: 600;
 }
 .article_row:hover img{
-    transform: scale(1.5);
+    transform: scale(1.2);
+}
+.row.article_row.align.borders::after{
+
+    margin-top: 40px;
 }
 .article_row span{
     display:none;
@@ -1768,12 +1772,167 @@ color: #202945;
     padding-bottom:145px;
 }
 .article_img{
-    padding: 25px 20px;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
 
     background: #E6EAEE;
 }
+.centrovka{
+    margin: 0 auto;
+    text-align: center;
+}
+.strelki.mini{
+    justify-content:space-around;
+    padding-bottom:0;
+}
+.information_img{
+    margin-top: 56px;
+    margin-bottom: 56px;
+    max-width: 100%;
+}
+.right_inform_description{
+    font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+/* or 125% */
+margin-top: 56px;
 
+
+color: #7B8797;
+
+}
+.grey_right_description{
+    font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+/* or 125% */
+
+
+color: #7B8797;
+}
+.grey_right_description span{
+    font-weight: 600;
+font-size: 32px;
+line-height: 40px;
+/* identical to box height, or 125% */
+
+letter-spacing: 0.01em;
+text-transform: uppercase;
+
+color: #7B8797;
+}
+.grey{
+    color: #7B8797;
+}
+
+.information .vitamin__h2{
+    margin-bottom:110px;
+}
+.right_inform_description span{
+    font-weight: 300;
+font-size: 96px;
+line-height: 20px;
+/* or 21% */
+
+
+color: #202945;
+}
+.mini_slider{
+    align-items: center;
+    margin-bottom: 100px;
+}
+.dop_description{
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+/* or 125% */
+margin-top: 41px;
+text-align: center;
+
+color: #202945;
+}
+.dop_a:hover .arrow_not_left svg {
+    right: -12%;
+}
+.dop_a svg {
+
+        position: absolute;
+        right: -8%;
+    
+}
+
+.dop_a{
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #202945;
+}
+.dop_tovar{
+    background-color: #F8F8F8;
+padding: 120px 0;
+}
+.nazad{
+    transform:rotate(180deg);
+}
+
+.information_description{
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+/* or 125% */
+
+
+color: #202945;
+}
+
+.mini_strelochk{
+    font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+/* or 125% */
+margin-bottom: 0;
+display: flex;
+align-items: center;
+color: #7B8797;
+}
+.organs_title{
+
+    font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 25px;
+/* identical to box height, or 125% */
+
+text-transform: uppercase;
+margin-bottom:0;
+color: #202945;
+}
+.big_picture_organs{
+    top: -71px;
+    left: -100px;
+    z-index: -1;
+    position: absolute;
+
+}
+
+.change .nazad{
+    transform:rotate(180deg);
+}
 .spoon_fat{
     position: absolute;
     right: 0;
@@ -2581,7 +2740,7 @@ color: #7B8797;
     }
 @media (min-width: 1445px){
     .container, .container-fluid{
-        max-width: 1680px;
+        max-width: 1440px;
     }
 }
 @media only screen and (max-width:1405px){

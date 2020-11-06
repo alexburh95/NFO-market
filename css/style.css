@@ -1673,6 +1673,10 @@ color: #202945;
 .perecluch button:hover svg circle{
 fill: #8897B3;
 }
+
+.mar20{
+    margin-top: 20px;
+}
 .stoks_content_description{
     font-style: normal;
 font-weight: normal;

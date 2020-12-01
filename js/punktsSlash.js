@@ -24,21 +24,10 @@ const hernia =document.querySelectorAll('.delivery_paragraf');
 deliveryContainers.forEach(container =>{
 const button = container.querySelector('input[type="radio"]');
 
-console.log(button)
+
 const paragraf = container.querySelectorAll('p');
 
-button.addEventListener('click', ()=>{
-    hernia.forEach(item=>{
-        item.classList.remove('fat');
-    })
- 
 
-    paragraf.forEach(item=>{
-        item.classList.toggle('fat');
-    })
-
-
-})
 
 
 })

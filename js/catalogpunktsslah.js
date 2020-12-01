@@ -11,7 +11,7 @@ const title = document.querySelectorAll('.sort');
 title.forEach(item=>{
 
 item.addEventListener('click',()=>{
-console.log('ты пидорас')
+
 console.log(item.textContent)
 content.textContent = item.textContent;
 

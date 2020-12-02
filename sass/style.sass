@@ -2,6 +2,7 @@
   
 @font-face 
   font-family: "Montserrat"
+  font-display: swap
   font-weight: 300
   font-style: normal
   src: url("../fonts/Montserrat-Light.ttf") format('truetype'), url("../fonts/Montserrat-Light.otf") format("opentype")
@@ -10,6 +11,7 @@
 
 @font-face 
   font-family: "Montserrat"
+  font-display: swap
   font-weight: 400
   font-style: normal
   src: url("../fonts/Montserrat-Regular.ttf") format('truetype'), url("../fonts/Montserrat-Regular.otf") format("opentype")
@@ -17,6 +19,7 @@
 
 @font-face 
   font-family: "Montserrat"
+  font-display: swap
   font-weight: 600
   font-style: normal
   src: url("../fonts/Montserrat-SemiBold.ttf") format('truetype'), url("../fonts/Montserrat-SemiBold.otf") format("opentype")
@@ -26,6 +29,7 @@ $primary-color: #202945
 body
   font-family: 'Montserrat', sans-serif
   font-weight: 400
+  font-display: swap
 
 a:hover
   text-decoration: none
@@ -580,12 +584,12 @@ header
     &:last-child
       display: flex
 
-.socseti
-  svg
+footer
+  .row.align
     margin-top: 60px
     margin-bottom: 170px
 
-  &:hover svg path
+  a:hover svg path
     fill: #8897B3
 
 footer a:hover

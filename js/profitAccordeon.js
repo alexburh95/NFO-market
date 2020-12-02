@@ -5,6 +5,9 @@ const acordeonContent = document.querySelectorAll(".acordeon");
 
 accordions.forEach((item) => {
   const button = item.querySelector(".acardeon_titile");
+  button.addEventListener('click',(e)=>{
+    e.preventDefault();
+  })
   const arrow = item.querySelector("svg");
   item.addEventListener("click", () => {
     arrow.classList.toggle("acordeon_up");

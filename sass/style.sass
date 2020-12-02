@@ -1,3 +1,5 @@
+
+  
 @font-face 
   font-family: "Montserrat"
   font-weight: 300
@@ -846,12 +848,14 @@ input:focus
   display: flex
   align-items: flex-end
   text-transform: uppercase
-  color: #7B8797
+  color: #FFFFFF
   width: 360px
   background: none
   border: none
   border-bottom: 0.5px solid #FFFFFF
 
+  &::placeholder
+    color: #7B8797
 .podrobno
   font-style: normal
   font-weight: normal
@@ -986,12 +990,15 @@ footer
     display: flex
     align-items: flex-end
     text-transform: uppercase
-    color: #7B8797
+    color: #FFFFFF
     width: 410px
     background: none
     border: none
     border-bottom: 0.5px solid #FFFFFF
     outline: none
+
+    &::placeholder
+     color: #7B8797
 
   button
     color: #FFFFFF
@@ -2699,6 +2706,17 @@ header .rowspan
   .header__znacki
     padding-top: 16%
 @media only screen and (max-width: 1370px)
+  .scroll_container 
+    height: 460px
+  .boxbery_container 
+    width: 1000px
+  .boxberry_inside
+    img
+      max-width: 100%
+      left: 0
+  .didjest
+    img
+      width: 100%
   .glowbox
     padding: 0px 8px
     padding-top: 14px
@@ -2706,12 +2724,29 @@ header .rowspan
     
   .upper_header_phone 
     font-size: 11px
+  .same_items .same__item
+   width: 100%
+   height: auto 
 
 @media only screen and (max-width: 1300px)
   .upper_header_phone 
     font-size: 10px
 
 @media only screen and (max-width: 1250px)
+  .sostav
+    .catalog
+      font-size: 10px
+ 
+      
+
+  .phones
+    font-size: 30px
+  .sort_title 
+    font-size: 10px
+  .hits_price
+    font-size: 15px
+  .new_price
+    font-size: 15px
   .menu__item:hover::after
     top: 90px
   .upper_header_phone 
@@ -2723,3 +2758,10 @@ header .rowspan
     padding: 0px 6px
     padding-top: 15px
     padding-bottom: 12px
+  .catalog
+   span
+     &:first-child
+      font-size: 10px
+  .finish_description 
+    font-size: 14px
+

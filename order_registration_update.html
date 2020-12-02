@@ -25,7 +25,7 @@
     <script src="https://use.fontawesome.com/0eeda8aac6.js"></script>
 
     <title>NFO</title>
-    <description></description>
+    
   </head>
 
   <body>
@@ -144,6 +144,7 @@
           <div class="row">
             <div class="col-lg-1"></div>
             <div class="col-lg-7">
+              <form action="" method="post">
               <div class="grey_fon">
                 <div class="punkt_container uno">
                   <h2 class="punkt__title">
@@ -415,7 +416,7 @@
                 </div>
 
                 <div class="include_punk_content3 hidden">
-                  <form class="information">
+                  <div class="information">
                     <div class="row">
                       <div class="col-lg-6">
                         <input type="text" name="name" placeholder="Анна" />
@@ -434,9 +435,12 @@
                       </div>
                       <div class="col-lg-6">
                         <input
-                          type="phone"
+                          type="tel"
+                          pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
                           name="phone"
                           placeholder="+7 (915) 123-45-67"
+                          required
+                         
                         />
                       </div>
                       <div class="col-lg-6">
@@ -447,7 +451,7 @@
                         />
                       </div>
                     </div>
-                  </form>
+                  </div>
                   <a href="#" class="catalog continue"
                     ><span>Далее</span> &nbsp; &nbsp;
                     <span
@@ -519,9 +523,8 @@
                     <p class="chosen_city">Выберите способ доставки</p>
                   </div>
 
-                  <form
-                    action=""
-                    method="post"
+                  <div
+                   
                     class="include_form delivery_form"
                   >
                     <div class="delivery_container">
@@ -552,10 +555,10 @@
                         >
                       </label>
                     </div>
-                  </form>
+                  </div>
 
 <div class="choosen_kurier_container hidden">
-<form action="" >
+
   <div class="delivery_container_form">
     <input type="text" placeholder="Дата доставки">
     <input type="text" placeholder="Адрес доставки">
@@ -570,13 +573,13 @@
     </label>
  </div>
 
-</form>
+
 
 <div class="delivery_container">
   <div class="bottom_choose">
     <div class="delivery_container"> <p class="chosen_city">Выберите способ доставки</p></div>
                      
-    <form action="" method="post" class="include_form delivery_form">
+    <div  class="include_form delivery_form">
     <div class="delivery_container">
      <label for="online">
          <input type="radio" value="online" name="bottom_choose" id="online"> <span>0₽<br>при оплате на сайте</span>
@@ -587,7 +590,7 @@
          <input type="radio"  value="nalikom_kurieru" name="bottom_choose" id="nalikom"> <span>450₽ <br>при оплате курьеру</span>
        </label>
      </div>
-     </form>
+    </div>
     </div>
 </div>
 </div>
@@ -649,7 +652,7 @@
                         <div class="col-lg-5">
                           <h2 class="boxberry_tittle">Выбор пункта доставки</h2>
 
-                          <form>
+                         
                             <div class="mailing_form">
                               <input
                                 class="lupa"
@@ -680,7 +683,7 @@
                                 </svg>
                               </button>
                             </div>
-                          </form>
+                          
                           <div class="scroll_container">
                             <div class="scroll_inside">
                               <h3 class="scroll__tittle">
@@ -814,7 +817,7 @@
                               Выбор пункта доставки
                             </h2>
 
-                            <form>
+                           
                               <div class="mailing_form">
                                 <input
                                   class="lupa"
@@ -845,7 +848,7 @@
                                   </svg>
                                 </button>
                               </div>
-                            </form>
+                            
                             <div class="scroll_container">
                               <h3 class="scroll__tittle">
                                 ул. 1905 года, ПВЗ № 99861
@@ -948,7 +951,7 @@
                 </div>
 
                 <div class="include_punk_content2 hidden">
-                  <form action="" method="post" class="include_form">
+                  <div  class="include_form">
                     <div class="delivery_container">
                       <label for="online_on_site">
                         <input
@@ -1039,16 +1042,17 @@
                       </label>
                     </div>
                     <div class="delivery_container">
-                      <a href="#" class="blue_knopka"><span class="arrow_not_left">Оформить заказ &nbsp;
+                      <a href="" class="blue_knopka"><span class="arrow_not_left">Оформить заказ &nbsp;
                         <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path class="shop" d="M1 1L6 6.07081L1 11" stroke="#ffffff"></path>
                         </svg>
                       </span>
                     </a>
                     </div>
-                  </form>
+                  </div>
                 </div>
               </div>
+              </form>
             </div>
             <div class="col-lg-4">
               <div class="finish_zakaz skrols">

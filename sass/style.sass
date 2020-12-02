@@ -1,5 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap')
+@font-face 
+  font-family: "Montserrat"
+  font-weight: 300
+  font-style: normal
+  src: url("../fonts/Montserrat-Light.ttf") format('truetype'), url("../fonts/Montserrat-Light.otf") format("opentype")
+      
 
+
+@font-face 
+  font-family: "Montserrat"
+  font-weight: 400
+  font-style: normal
+  src: url("../fonts/Montserrat-Regular.ttf") format('truetype'), url("../fonts/Montserrat-Regular.otf") format("opentype")
+      
+
+@font-face 
+  font-family: "Montserrat"
+  font-weight: 600
+  font-style: normal
+  src: url("../fonts/Montserrat-SemiBold.ttf") format('truetype'), url("../fonts/Montserrat-SemiBold.otf") format("opentype")
+      
 
 $primary-color: #202945
 body
@@ -2497,8 +2516,6 @@ footer a
   line-height: 15px
   text-align: center
   text-transform: uppercase
-  width: 140px
-  height: 40px
   color: #FFFFFF
   padding: 0px 20px
   padding-top: 14px
@@ -2662,6 +2679,11 @@ header .rowspan
     max-width: 1600px
     margin: 0 auto
 
+  .glowbox
+    padding: 0px 12px
+    padding-top: 14px
+    padding-bottom: 12px
+
 @media only screen and (max-width: 1370px)
   .menu__item:hover::after
     top: 93px
@@ -2676,10 +2698,28 @@ header .rowspan
 
   .header__znacki
     padding-top: 16%
+@media only screen and (max-width: 1370px)
+  .glowbox
+    padding: 0px 8px
+    padding-top: 14px
+    padding-bottom: 12px
+    
+  .upper_header_phone 
+    font-size: 11px
+
+@media only screen and (max-width: 1300px)
+  .upper_header_phone 
+    font-size: 10px
 
 @media only screen and (max-width: 1250px)
   .menu__item:hover::after
     top: 90px
-
+  .upper_header_phone 
+    font-size: 9.5px
   .mailing
     padding-bottom: 100px
+  .glowbox
+    font-size: 10px
+    padding: 0px 6px
+    padding-top: 15px
+    padding-bottom: 12px

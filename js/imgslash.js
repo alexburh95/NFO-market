@@ -8,7 +8,7 @@ const smallPhoto = document.querySelectorAll('.small_img')
 
 
 smallPhoto.forEach((item) => {
-    item.addEventListener('click', function() {
+    item.addEventListener('click', ()=>{
 bigPhoto.src= item.src;
     });
   });

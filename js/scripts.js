@@ -7,10 +7,6 @@ var mySwiper = new Swiper('.swiper1', {
     // If we need pagination
     pagination: {
         el: '.swiper-pagination',
-        type: 'custom'
-    },
-    renderCustom: function (swiper, current, total) {
-        return current + ' of ' + total;
     },
 
     // Navigation arrows

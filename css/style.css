@@ -160,7 +160,7 @@ header .container-fluid {
 }
 .swiper1 .swiper-button-prev::after,
 .swiper1 .swiper-button-next::after {
-  display: none;
+    display: none;
 }
 
 .swiper1 .swiper-button-prev,
@@ -173,6 +173,53 @@ header .container-fluid {
 .swiper1 .swiper-button-prev:hover,
 .swiper1 .swiper-button-next:hover {
     opacity: 1;
+}
+.swiper1 .slider-pagination > .swiper-pagination-bullet {
+    background-color: #202945;
+    width: 4px;
+    height: 4px;
+    margin-right: 25px !important;
+    margin-bottom: 30px !important;
+    opacity: 1;
+}
+.swiper1 .slider-pagination > .swiper-pagination-bullet-active {
+    background-color: #202945;
+    position: relative;
+}
+@keyframes rotateComet {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.swiper1 .slider-pagination > .swiper-pagination-bullet-active::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    /* border: 1px solid #202945; */
+
+    /* border-image-source: conic-gradient(
+        from 147.38deg at 50% 50%,
+        rgba(255, 255, 255, 0) -355.2deg,
+        #202945 1.49deg,
+        rgba(255, 255, 255, 0) 4.8deg,
+        #202945 361.49deg
+    ); */
+    animation-name: rotateComet;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-delay: .5s;
+    animation-direction: alternate;
+    left: -13px;
+    top: -13px;
+    background-image: url('../img/comet.png');
+    background-size: contain;
+    background-position: center center;
 }
 .salehits__title {
     font-style: normal;

@@ -1,95 +1,86 @@
 var mySwiper = new Swiper('.swiper1', {
     // Optional parameters
-    direction: 	`horizontal`,
+    direction: `horizontal`,
     loop: true,
-  
+    autoplay: true,
+
     // If we need pagination
     pagination: {
-      el: '.swiper-pagination',
+        el: '.swiper-pagination',
+        type: 'custom'
     },
-  
+    renderCustom: function (swiper, current, total) {
+        return current + ' of ' + total;
+    },
+
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
-  
-    // And if we need scrollbar
-    
-  })
 
-  window.mySwiper2 = new Swiper('.swiper2', {
+    // And if we need scrollbar
+})
+
+window.mySwiper2 = new Swiper('.swiper2', {
     // Optional parameters
-    direction: 	`horizontal`,
+    direction: `horizontal`,
     loop: true,
     slidesPerView: 4,
     spaceBetween: 30,
     autoplay: {
         delay: 500000000,
-      },
-      on: {
+    },
+    on: {
         init() {
-          this.el.addEventListener('mouseenter', () => {
-            this.autoplay.stop();
-          });
-    
-          this.el.addEventListener('mouseleave', () => {
-            this.autoplay.start();
-          });
-        }
-      },
-  
+            this.el.addEventListener('mouseenter', () => {
+                this.autoplay.stop()
+            })
+
+            this.el.addEventListener('mouseleave', () => {
+                this.autoplay.start()
+            })
+        },
+    },
+
     // If we need pagination
-   
-  
+
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-nexti',
-      prevEl: '.swiper-button-previ',
+        nextEl: '.swiper-button-nexti',
+        prevEl: '.swiper-button-previ',
     },
-  
+
     // And if we need scrollbar
-    
-  })
+})
 
-
-
-  var mySwiper3 = new Swiper('.swiper3', {
+var mySwiper3 = new Swiper('.swiper3', {
     // Optional parameters
-    direction: 	`horizontal`,
+    direction: `horizontal`,
     loop: true,
     slidesPerView: 2,
     spaceBetween: 30,
-   autoplay: {
+    autoplay: {
         delay: 5000,
-      },
-      
+    },
+
     // If we need pagination
-   
-  
+
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-nexti',
-      prevEl: '.swiper-button-previ',
+        nextEl: '.swiper-button-nexti',
+        prevEl: '.swiper-button-previ',
     },
-  
+
     // And if we need scrollbar
-    
-  });
+})
 
-
-  window.slash =(evt, choosenClass ) =>{
-    evt.addEventListener('click', function() {
-
-      
- choosenClass.classList.toggle('hidden');
- const arrow = evt.querySelector('.down');
-  arrow.classList.toggle('up');
-    });
+window.slash = (evt, choosenClass) => {
+    evt.addEventListener('click', function () {
+        choosenClass.classList.toggle('hidden')
+        const arrow = evt.querySelector('.down')
+        arrow.classList.toggle('up')
+    })
 }
 
-
-let sticky = new Sticky('.header_main');
-
-
-
+let sticky = new Sticky('.header_main')

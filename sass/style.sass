@@ -252,7 +252,7 @@ header
   position: relative
 
 .special_row
-  align-items: center
+  align-items: flex-start
   padding: 30px 0
   margin: 0
 
@@ -376,6 +376,51 @@ header
 
 .delivery_container
   padding: 0 30px
+
+.vitamin
+  position: relative
+
+.show__more
+  margin: 0 auto
+  padding: 20px 0
+  text-align: center
+  padding-top: 15px
+  padding-bottom: 155px 
+
+.breadcrumbs
+  display: flex
+  align-items: center
+  padding-top: 90px
+  padding-bottom: 50px
+  position: relative
+  
+
+
+
+.bread_item
+  font-weight: 300
+  font-size: 11px
+  text-transform: uppercase
+  padding-right: 15px
+  color: $primary-color
+  margin: 0
+  display: flex
+  align-items: center
+
+.bread_arrow 
+  margin-left: 10px
+
+.sort_title
+    justify-content: center
+
+.chat__img
+ position: absolute
+ top: -2%
+ right: 75px
+ max-width: 5% 
+
+ &:hover
+  cursor: pointer
 
 .delivery_paragraf
   font-style: normal
@@ -738,9 +783,19 @@ footer a:hover
   line-height: 20px
   color: $primary-color
 
+.fat
+  font-weight: 600  
 .rowspan
   display: flex
   align-items: center
+#tab2
+  .rowspan
+    padding-bottom: 20px
+    padding-top: 10px
+    img
+      margin-right: 10px
+    svg
+      margin-right: 5px
 
 .delivery_container_form input[placeholder='Квартира']
   width: 30%
@@ -1094,13 +1149,202 @@ footer a
   font-weight: 600
   font-size: 32px
   line-height: 40px
-  padding-bottom: 50px
+  margin: 0 auto
   text-align: center
   letter-spacing: 0.01em
   text-transform: uppercase
   color: $primary-color
-  padding-top: 90px
+  width: 100%
+  position: absolute
+%little_paragraph
+   font-style: normal
+   font-weight: normal
+   font-size: 11px
+   color: $primary-color
+   text-transform: uppercase
+   display: flex
+   align-items: center
+.create_set_title
+  @extend %little_paragraph
+  &:hover
+    cursor: pointer
+    color: #8897b2
+  svg
+    margin-left: 10px
+.include_punk_content1
+  .pravo
+    justify-content: flex-end
+    margin-right: 15px
+  ul
+    list-style-type: disk
+    margin: 0
+    padding-left: 8%
+    margin-bottom: 30px
+    
+    li
+      font-size: 12px
+      margin-bottom: 10px
 
+      
+  .comboset
+    font-size: 12px    
+.create_new_set
+  padding-bottom: 430px
+  .choosen_item
+    padding-left: 25px
+    justify-content: flex-start
+    .comboset
+      margin-left: 20px
+      margin-bottom: 10px
+    .rowspan
+      margin-left: 20px  
+  .hits__title
+    margin-bottom: 25px
+  .salehits__item
+    height: 390px
+    .basket
+      span
+        display: block
+  .salehits__item__content_top
+    padding-bottom: 30px
+  .hidden_menu
+    left: inherit
+    right: 15%
+  .icon
+    margin-right: 20px 
+%set_sizes
+  width: 300px
+  height: 390px
+  max-width: 100%
+.add_to_set
+  @extend %set_sizes
+  height: auto
+  background-color:#F8F8F8
+  padding: 15px
+  .add_cart_button
+    background: $primary-color
+    color: #FFFFFF
+    @extend %little_paragraph
+    width: 100%
+    height: 45px
+    justify-content: center
+    border: none
+    &:disabled
+      background: #7B8797
+    svg
+      margin-left:10px 
+.bottle-paused 
+  animation-play-state: paused
+%scattered_row
+  display: flex
+  align-items: center
+  justify-content: space-between
+  
+.itog_sum
+  @extend  %scattered_row
+  margin-top: 45px
+  margin-bottom: 10px
+  p
+    font-weight: 600
+    font-size: 16px
+    margin: 0
+  sales
+    span
+      font-size: 16px
+.chosen_container
+  position: relative
+  margin-bottom: 15px
+  &::after
+    content: ""
+    position: absolute
+    width: 100%
+    height: 0.5px
+    background: #C3C9CF
+.choosen_item_title
+  font-size: 12px
+  margin: 0
+.scattered_row
+  @extend %scattered_row
+  padding-bottom: 10px 
+  .count
+    padding: 0 10px
+  .perecluch
+    button
+      padding: 0 
+  .new_price
+    font-size: 12px
+  .hits_price
+    font-size: 12px     
+.create_set_title
+  @extend  %little_paragraph
+  margin: 0
+.add_item_to_set
+  font-weight: 600
+  font-size: 16px
+ 
+@keyframes move-bottle 
+  to 
+    transform: translateY(110px)
+    opacity: 0
+  
+.animate_bottle
+  margin-top: 40px
+  animation-name: move-bottle
+  animation-duration: 3s
+  animation-iteration-count: infinite
+  animation-timing-function: linear
+  &:hover
+    cursor: pointer
+ 
+.box_animation
+  margin: 0 auto
+  text-align: center
+  display: flex
+  flex-direction: column
+  margin-bottom: 60px
+.animate_bottle
+  margin-bottom: 20px     
+.set_item
+  @extend %set_sizes
+  background: url('../img/set_back.png')
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  &:hover
+    cursor: pointer
+    .basket 
+      display: flex
+      align-items: center
+      span
+        display: block
+
+
+.create_set:hover + p
+    color: #6984B5
+    svg
+      margin-left: 15px
+      path
+        stroke: #6984B5
+
+.create_set
+  @extend  %set_sizes
+  background: #F8F8F8
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-bottom: 20px
+  &:hover
+    background: #E6EAEE
+    cursor: pointer
+
+   
+
+    svg
+      transform: scale(1.0833)
+      
+      circle
+      
+        fill:#6984B5
 .all_products
   font-size: 12px
   line-height: 15px
@@ -1133,6 +1377,12 @@ footer a
   width: 20px
   height: 20px
 
+.holly.categories
+    display: flex
+    margin-bottom: 25px
+    justify-content: center
+    .rovno:not( last-child)
+      margin-right: 60px
 .sort
   font-style: normal
   font-weight: normal
@@ -1379,10 +1629,15 @@ footer a
 
 .favorit
   .col-lg-3 .catalog
-    margin-left: 30%
+    margin-left: 20%
 
   padding-bottom: 210px
 
+.average_rating
+  font-weight: 600
+  font-size: 16px
+  line-height: 20px
+  margin: 0 
 .stoks_content_title
   font-style: normal
   font-weight: 600
@@ -1975,11 +2230,90 @@ footer a
   color: $primary-color
   margin-bottom: 430px
 
+
+.item_raiting
+  display: flex
+  align-items: center
+  justify-content: space-between
+  span
+   font-weight: 300
+   font-size: 16px
+   color: $primary-color
+   padding-left: 10px
+   
+.raiting
+  dislay: flex
+  align-items:center
+
+$stars: 5
+$star-spacing: 5px
+%row_span
+  display: flex
+  align-items: center
+.row_span
+  display: flex
+.rating
+  
+  
+
+  label 
+   float: right
+   position: relative
+   cursor: pointer
+   margin: 0
+  
+    
+   &:not(:first-of-type) 
+    padding-right: $star-spacing
+    
+    
+   &:before 
+    content: url("data:image/svg+xml,%3Csvg width='16' stroke='%23202945' height='16' viewBox='0 0 16 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23202945' d='M7.04894 0.92705C7.3483 0.00573921 8.6517 0.00573969 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58778 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z' /%3E%3C/svg%3E")
+    
+    
+  
+  
+  input 
+    display: none
+  
+  
+  input:checked ~ label:before,
+  &:not(:checked) > label:hover:before,
+  &:not(:checked) > label:hover ~ label:before 
+     content: url("data:image/svg+xml,%3Csvg width='16' stroke='%23202945' height='16' viewBox='0 0 16 15' fill='%23202945' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23202945' stroke='%23202945' d='M7.04894 0.92705C7.3483 0.00573921 8.6517 0.00573969 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58778 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z' /%3E%3C/svg%3E")
+    
+  
+
+
+.catalog_item
+
+  .perecluch
+    margin-right: 60px
+    span
+      padding: 0 20px
+.relative
+  position: relative
+.choosen_item
+  display: flex
+  justify-content: space-evenly
+  align-items: center
+  position: absolute
+  width: 300px
+  height: 90px
+  right: 75px
+  top: 50px
+  background: #FFFFFF
+  box-shadow: 1px 1px 10px 1px rgba(32, 41, 69, 0.05)
+  img
+    object-fit: none
+    width: 43px
+    height: 70px
+  
 .item_title
   font-style: normal
   font-weight: 600
   font-size: 20px
-  line-height: 25px
+  margin: 0
   letter-spacing: 0.01em
   text-transform: uppercase
   color: $primary-color
@@ -1987,8 +2321,6 @@ footer a
 .to_cart:hover svg
   margin-left: 9px
 
-.catalog_item .container-fluid
-  padding-top: 120px
 
 .parametr
   font-style: normal
@@ -2430,6 +2762,7 @@ footer a
   margin-bottom: 60px
 
 .feedback
+  padding-top: 60px
   cite
     font-style: normal
     font-weight: 600
@@ -2437,8 +2770,7 @@ footer a
     line-height: 20px
     color: $primary-color
     padding-right: 15px
-
-  margin-bottom: 50px
+    margin-bottom: 10px
 
   p
     font-style: normal

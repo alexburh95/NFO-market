@@ -1164,7 +1164,37 @@ footer a
    text-transform: uppercase
    display: flex
    align-items: center
-.create_set_title
+.didjest_main
+  padding-top: 120px
+%didjest_scale
+  transform: scale(1.009)
+  transition-duration: 200ms
+  transition-timing-function: ease-in-out
+
+.big_didjest
+  
+  height: 450px
+  position: relative
+  .big_fon
+    position: absolute
+    width: 100%
+    height: 100%
+    z-index: -1
+  span
+    display: flex
+    align-items: center  
+    
+            
+  &:hover
+    cursor: pointer
+    .big_fon
+      @extend %didjest_scale
+      
+    span
+      display: flex
+.pad_60
+  margin-bottom: 60px
+.create_set_title 
   @extend %little_paragraph
   &:hover
     cursor: pointer
@@ -1232,14 +1262,443 @@ footer a
     &:disabled
       background: #7B8797
     svg
-      margin-left:10px 
+      margin-left:10px
+.personal_account
+  padding-bottom: 200px        
+.pad_30
+  padding: 0 30px
+  .blue_knopka
+      margin-bottom: 30px
+  .row.special_row
+    align-items: center
+    padding-top: 30px
+    padding-bottom: 0px
+    &::after
+      width: 100%
+      margin-left: 0         
+.loading_scale
+  width: 100%
+  margin-top: 40px
+  margin-bottom: 40px
+  height: 20px
+  background: #C3C9CF
+  border-radius: 10px
+  display: flex
+  align-items: center
+
+  .blue_left
+    border-radius: 0px 10px 10px 0px
+  .blue_right
+    border-radius: 10px 0 0 10px
+    
+  .blue
+    background: $primary-color
+ 
+ 
+  span
+    font-size: 12px
+    text-align: center
+    color: #ffffff
+    width: 34%
+  
+
 .bottle-paused 
   animation-play-state: paused
 %scattered_row
   display: flex
   align-items: center
   justify-content: space-between
+.zakaz_data
+  display: flex
+  align-items: center
+  justify-content: space-between
+  p
+    font-size: 12px
+    display: flex
+    align-items: center
+    margin: 0 
+.your_zakazes
+  background: #f8f8f8
+  height: 120px
+  padding: 30px
+  &:hover
+    cursor: pointer
+  .zakaz_number
+    font-weight: 600
+    font-size: 16px
+.your_bonus
+  padding: 25px 40px
+  background: #F8F8F8
+  p
+    font-size: 12px
+.your_name
+  font-weight: 600
+  font-size: 20px
+  margin-bottom: 25px
+.bonus_balls
+  font-weight: 600
+  font-size: 16px
+  margin: 0
+.hello_popup
+  position: absolute
+  top: 70px
+  left: 120px
+  .blue_knopka
+    margin-bottom: 30px
+  background-color: #ffffff
+  padding:40px 30px
+  width: 410px
+  .flex_end
+    display: flex
+    justify-content: flex-end
+  div
+    text-align: center
+    margin: 0 auto 
+  p
+    font-size: 16px
+  .bell
+    margin-top: 60px
+    margin-bottom: 30px
   
+  .close_popup
+    float: right
+.change_password
+  margin-bottom: 20px
+  margin-top: 10px
+  @extend %scattered_row
+  border-bottom: 0.5px solid #202945
+  p
+    font-size: 16px
+    margin-bottom: 0
+#tab3
+  .udevom_input
+    @extend %scattered_row
+  label
+    span
+      display: flex
+      align-items: center
+      &::before
+        margin-right: 10px
+.chose_rassilki
+  margin-bottom: 100px
+.konsult_title
+  margin-bottom: 50px
+.answer_container
+  margin-bottom: 80px
+.promokods.gold
+  background: #FFE09A
+#tab6
+  .col-lg-6
+    .free_delivery_description
+      margin-bottom: 40px
+.promokods
+  background-color: #E6EAEE 
+  padding: 15px 40px
+ 
+  margin-bottom: 20px
+.actual_skidki
+  padding-bottom: 80px
+.ball_story
+  .pravo
+    display: flex
+    justify-content: flex-end
+  .row
+    align-items: center
+    margin-bottom: 20px
+  p
+    font-size: 12px
+    margin: 0
+
+.free_delivery_title
+  min-height: 25px
+  font-weight: 600
+  font-size: 16px
+  display: flex
+  align-items: center
+.free_delivery_description
+  font-size: 12px 
+  margin: 0
+.grey_span
+  font-size: 12px
+  color: #7B8797
+.ball_story
+  padding-bottom: 82px
+  .data
+    font-size: 12px
+.green_span
+  color: #A8C4B4
+  font-size: 12px    
+
+#tab5
+  
+  .no_line.row.special_row
+    margin-bottom: 90px
+    &::after
+      content: none
+      
+  .col-lg-2.answer 
+    justify-content: center
+  .no_answer
+    color: #7B8797
+    font-size: 12px
+  .feedback.bot0
+    padding-top: 0
+  
+  .row.special_row.answers
+    padiing-top: 15px
+    padding-bottom: 0 
+   
+  .feedback.answer
+    margin-top: 0
+
+  .row.special_row
+    .comboset
+      margin-bottom: 0
+    align-items: center
+    &::after
+      width: 100%
+      margin-left: 0
+
+.meropriat_container
+  background: #F8F8F8
+  padding: 25px 100px
+  width: 100%
+  .blue_knopka
+    width: 50%
+    margin: 0 auto
+
+.make_konsult
+  font-size: 16px
+  text-align: center      
+#tab4
+  .obertka
+    border-bottom:  0.5px solid #C3C9CF
+    padding: 30px 0
+    margin-bottom: 40px
+  .pad_25
+    margin-top: 25px
+    align-items: center
+  .pravo
+    justify-content: flex-end
+.loyal_desk
+  font-size: 16px
+  margin-top: 25px    
+.loyal_title
+  font-weight: 600
+  margin-top: 60px
+  font-size: 16px
+  margin-bottom: 25px 
+.little_cashback
+  background: #E6EAEE
+  padding: 25px 20px
+  text-align: center
+  .top
+    border-bottom: 0.5px solid #C3C9CF
+    padding-bottom: 15px
+    margin-bottom: 15px
+  .bottom
+    span
+      font-size: 16px
+  span
+    font-weight: 600
+    font-size: 20px
+  p
+    font-size: 12px
+    margin: 0   
+.yellow_time
+  
+  small
+    font-size: 12px
+  p
+    margin: 0
+    font-size: 16px
+  img
+      width: 20px
+      height:  auto  
+  background: #FFE09A
+  width: 100%
+  border-radius: 24px
+  display: flex
+  padding: 11px 22px
+  align-items: center
+  justify-content: space-between 
+.tabs_ins
+  display: none              
+.zadnik
+  width: 100%
+  height: 260px
+  margin-bottom: 550px
+  background: #F8F8F8
+  position: relative
+.konsult_title
+  @extend %scattered_row
+.modern_article
+  color: #7B8797
+  margin: 0 auto  
+.new_article
+  font-size: 16px
+  margin: 0    
+.information.adress
+.articles
+  .col-lg-2.cent
+    display: flex
+    justify-content: center
+  .col-lg-2.lef
+    display: flex
+    justify-content: flex-end
+  span
+    font-size: 12px
+    color: #7B8797  
+
+  .little_arct
+    border-radius: 55px
+    width: 100% 
+  .row
+    align-items: center
+    margin-bottom: 20px
+  .row.lines
+    border-top: 0.5px solid #C3C9CF
+    padding: 35px 0    
+  label
+    margin: 0
+    padding: 0
+  span
+    display: flex
+    align-items: center
+.information.adress.dop
+  input
+    &::placeholder
+      color: #7B8797
+.datas  
+  font-weight: 600
+  font-size: 20px
+  margin-bottom: 50px
+  text-transform: uppercase
+.personal_podpis
+  .catalogs.pravo
+    font-size: 11px
+    text-transform: uppercase
+    &:hover
+     color: #7B8797
+     svg
+       path
+         stroke: #7B8797
+  .row
+    align-items: center
+  padding: 30px 40px
+  background: #F8F8F8
+  h3
+    font-weight: 600
+    font-size: 20px
+    margin: 0
+  p
+    font-size: 16px  
+#tab1
+  .catalog.pravo
+    justify-content: flex-end  
+.nastroika_podpisi
+  margin-top: 50px  
+.grey_loyal_container
+  background: #F8F8F8
+  padding: 25px
+.obolochka
+  p
+    font-size: 12px
+
+  h5
+    font-weight: 600
+    font-size: 12px
+  .row
+    align-items: center
+  padding: 25px 0
+  border-top: 0.5px solid #C3C9CF
+  border-bottom: 0.5px solid #C3C9CF
+  span
+    font-size: 48px
+  .rowspan
+    padding: 0
+    p
+      margin: 0    
+#tab2
+
+  .catalogs
+    @extend %little_paragraph
+    text-transform: uppercase
+    margin-top: 20px 
+  .ball_story
+    margin-top: 85px
+  .checks
+    margin-bottom: 40px
+  .information
+    margin-bottom: 60px
+  .catalog
+    justify-content: flex-end
+  .ura
+      font-size: 12px
+      margin-top: -50px
+  .rowspan
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    
+    input[type="text"]
+      width: 30%
+.tabs_in
+  .information
+    padding: 0   
+.big_didjest_row
+  @extend %scattered_row
+  padding: 0 30px
+  padding-top: 400px
+  h3
+    font-weight: 600
+    font-size: 20px
+    margin: 0
+    color: #ffffff
+  span
+    color:#ffffff
+    display: none
+    font-size: 11px
+    text-transform: uppercase
+.account_menu
+  margin: 0
+  padding: 0
+  list-style-type: none
+  li
+    font-size: 16px
+    margin-bottom: 20px
+    &:hover
+      font-weight:600
+      cursor: pointer  
+.didjest_3
+  h6
+    font-size: 12px
+    color: #7B8797
+    margin-bottom: 25px
+  p
+    font-size: 16px
+  img
+    max-width: 100%
+  h3
+    margin: 0
+    font-weight: 600
+    font-size: 20px
+    padding: 25px 0
+  span
+    display: none
+    text-transform: uppercase
+    line-height: none
+    font-size: 11px
+  &:hover
+    cursor: pointer
+    img
+      @extend %didjest_scale
+    span
+      display: flex
+      align-items: center    
+
+
 .itog_sum
   @extend  %scattered_row
   margin-top: 45px

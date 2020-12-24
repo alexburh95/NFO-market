@@ -26,6 +26,8 @@
       
 
 $primary-color: #202945
+h1
+  color: $primary-color
 body
   font-family: 'Montserrat', sans-serif
   font-weight: 400
@@ -1104,6 +1106,10 @@ footer a
   line-height: 16px
   color: #FFFFFF
   transform: rotate(0.14deg)
+.cartlike
+  .to_cart
+    padding-left: 0px
+    justify-content: center  
 
 .error_404
   font-style: normal
@@ -1458,6 +1464,132 @@ footer a
     &::after
       width: 100%
       margin-left: 0
+
+.slider_fish
+  .fish-slider
+    padding: 0
+    margin: 0
+    max-width: 100%
+
+  *
+    padding: 0
+    margin: 0
+
+  .row
+    width: 100%
+
+.splide__slide
+  width: 500px
+
+.splide
+  width: 100%
+  position: relative
+  margin-top: 100px
+.slider_fish
+  .splide__slide.margin_slide 
+    width: 25vw
+
+
+
+.splide__arrows
+  position: absolute
+  right: 0
+  top: -95px
+.company_story
+  padding-top: 130px
+  h3
+    font-weight: 600
+    font-size: 20px
+    text-transform: uppercase
+  p
+    margin-top: 50px
+    font-size: 16px
+
+.splide__arrow
+  background-color: transparent
+  border: none
+  margin: 0 60px
+
+.slide-title
+  font-size: 48px
+  padding: 20px 0
+  display: flex
+  align-items: center
+.nagradi
+  padding: 115px 0
+  img
+    filter: grayscale(1)
+    max-width: 100%
+    &:hover
+      filter: grayscale(0)     
+  h3
+    font-weight: 600
+    font-size: 20px
+    margin-bottom: 50px
+    text-transform: uppercase  
+
+  span
+    margin-right: 30px
+.molekula_title
+  font-weight: 600
+  font-size: 16px
+  margin-bottom: 40px
+  .small
+    font-size: 18px
+    line-height: 20px
+    padding-bottom: 5px
+    margin-left: 7px
+.fish_oil_nagrev
+  margin: 50px 0
+.animation_center
+  margin: 0 auto
+  text-align: center
+  &:hover
+    cursor: pointer  
+.slide-line
+  height: 1px
+  background-color: #7B8797
+  width: 100%
+  position: relative
+
+  &::after
+    display: block
+    content: ''
+    position: absolute
+    background-color: #202945
+    width: 5px
+    height: 5px
+    top: -2px
+    left: -2px
+    border-radius: 2.5px
+
+.slide-text
+  width: 300px
+  font-size: 12px
+  padding: 40px 0
+
+.splide__slide.margin_slide
+  width: 30vw
+
+.slide-wide
+  width: 70vh
+
+  .slide-text
+    width: 100%
+
+@keyframes swimFishSwim
+  0%
+    left: 0
+
+  100%
+    left: 500px
+
+.animate-fish
+  position: relative
+  animation: swimFishSwim 1.5s ease-in-out .3s alternate forwards
+
+.slide-wide .slide-line
+  background-color: transparent      
 
 .meropriat_container
   background: #F8F8F8
@@ -2436,7 +2568,8 @@ footer a
 
 .change .nazad
   transform: rotate(180deg)
-
+.upper_header_phone
+  margin-left: 10px
 .spoon_fat
   position: absolute
   right: 0
@@ -2688,12 +2821,12 @@ footer a
   text-transform: uppercase
   color: $primary-color
   margin-bottom: 430px
-
-
+.rating
+  margin-left: 70px
 .item_raiting
   display: flex
   align-items: center
-  justify-content: space-between
+ 
   span
    font-weight: 300
    font-size: 16px
@@ -3323,8 +3456,7 @@ $star-spacing: 5px
   padding-top: 14px
   padding-bottom: 12px
 
-header .rowspan
-  justify-content: space-between
+
 
 .boxberry_inside
   button[type="submit"]
@@ -3459,14 +3591,38 @@ header .rowspan
   display: flex
   justify-content: center
   margin-right: 10px
-
+.kachest_control
+  background-color:  #F8F8F8
+  padding: 130px 0
+  .row.hundredtwentyfive
+    margin-top: 125px
+  h3
+    font-weight: 600
+    font-size: 20px
+    margin-bottom: 50px
+    text-transform: uppercase
+  p
+    font-size: 16px 
+.rowspans
+       
+@media only screen and (max-width: 1700px)
+  .slider_fish
+    .splide__slide.margin_slide 
+      width: 23vw
 @media only screen and (max-width: 1600px)
   .menu__item:hover::after
     top: 96px
 
 @media only screen and (max-width: 1560px)
+  .slider_fish
+    .splide__slide.margin_slide 
+      width: 22vw
+
 
 @media only screen and (max-width: 1450px)
+  .slider_fish
+    .splide__slide.margin_slide 
+      width: 21vw
   .menu__item:hover::after
     top: 93px
 
@@ -3475,6 +3631,9 @@ header .rowspan
     max-width: 1440px
 
 @media only screen and (max-width: 1405px)
+  .slider_fish
+    .splide__slide.margin_slide 
+      width: 20vw
   .stoks_back
     background-image: url(../img/stokssummer.png)
     background-repeat: no-repeat
@@ -3528,6 +3687,11 @@ header .rowspan
     font-size: 10px
 
 @media only screen and (max-width: 1250px)
+  .tabs_title
+    font-size: 17px
+  .item_title 
+    font-size: 18px
+
   .sostav
     .catalog
       font-size: 10px
@@ -3559,4 +3723,52 @@ header .rowspan
       font-size: 10px
   .finish_description 
     font-size: 14px
+@media only screen and (max-width: 1150px)
+  .item_raiting 
+    
+    align-items: flex-start
+
+  header
+    .container-fluid
+      padding: 0 44px
+
+  .container-fluid
+    padding: 0 44px
+  .item_title
+    font-size: 30px
+    width: 55%
+  .glowbox 
+    font-size: 9px
+    padding: 0px 4px
+    padding-top: 15px
+    padding-bottom: 12px
+  .upper_header_phone 
+    font-size: 8.5px
+  .sostav .catalog 
+    font-size: 8px
+  .delivery_description 
+    font-size: 14px
+  .catalog span:first-child 
+    font-size: 8px
+  .same_items .to_cart 
+    margin-left: 0%
+  .img_banks_row 
+    padding: 0 60px  
+      
+@media only screen and (max-width: 1020px)
+  .col-lg-4.combos 
+    margin-left: 130px
+@media only screen and (max-width: 992px)
+  .glowbox 
+    font-size: 12px
+    padding: 0px 11px
+    padding-top: 15px
+    padding-bottom: 12px
+  .upper_header_phone 
+    font-size: 10.5px
+  
+
+
+   
+   
 

@@ -136,7 +136,7 @@ header
 
 .swiper1
   width: 100%
-  height: 720px
+  height: 800px
 
 .main_slider .swiper-slide
   background-repeat: no-repeat
@@ -2559,6 +2559,59 @@ footer a
   text-transform: uppercase
   margin-bottom: 0
   color: $primary-color
+
+
+
+.swiper1
+  .swiper-button-prev::after, .swiper-button-next::after
+    display: none
+
+  .swiper-button-prev, .swiper-button-next
+    opacity: 0
+    height: 100%
+    top: 2%
+    padding: 5rem
+
+  .swiper-button-prev:hover, .swiper-button-next:hover
+    opacity: 1
+
+  .slider-pagination >
+    .swiper-pagination-bullet
+      background-color: #202945
+      width: 4px
+      height: 4px
+      margin-right: 25px !important
+      margin-bottom: 30px !important
+      opacity: 1
+
+    .swiper-pagination-bullet-active
+      background-color: #202945
+      position: relative
+
+      &::after
+        display: block
+        content: ''
+        position: absolute
+        width: 30px
+        height: 30px
+        border-radius: 15px
+        animation-name: rotateComet
+        animation-duration: 3s
+        animation-timing-function: ease
+        animation-delay: .5s
+        animation-direction: alternate
+        left: -13px
+        top: -13px
+        background-image: url('../img/comet.png')
+        background-size: contain
+        background-position: center center
+
+@keyframes rotateComet
+  0%
+    transform: rotate(0deg)
+
+  100%
+    transform: rotate(360deg)
 
 .big_picture_organs
   top: -71px

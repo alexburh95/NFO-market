@@ -1,22 +1,22 @@
 var mySwiper = new Swiper('.swiper1', {
-    // Optional parameters
-    direction: 	`horizontal`,
-    loop: true,
-  
-    // If we need pagination
-    pagination: {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  autoplay: true,
+
+  // If we need pagination
+  pagination: {
       el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
+  },
+
+  // Navigation arrows
+  navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    
-  })
+  },
+
+  // And if we need scrollbar
+})
 
   window.mySwiper2 = new Swiper('.swiper2', {
     // Optional parameters

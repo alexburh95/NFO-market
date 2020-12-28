@@ -414,6 +414,7 @@
             </div>
 
             <div class="hidden tabs_in " id="tab2">
+              <form>
                 <h2 class="datas">Мои данные</h2>
                 <div class="information">
                     <div class="row">
@@ -433,9 +434,9 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-6">
-                            <div class="rowspan"><input type="text" placeholder="Дата">
-                                <input type="text" placeholder="Месяц">
-                                <input type="text" placeholder="Год"></div>
+                            <div class="rowspan"><input pattern="[0-9]{2}" type="text" value = "25" placeholder="Дата">
+                                <input type="text" pattern="[0-9]{2}" placeholder="Месяц" value = "10">
+                                <input type="text" pattern="[0-9]{4}" placeholder="Год" value ="1998"></div>
                                 <p class="ura">Поздравления и дополнительные скидки от NFO на день рождения!</p>
                         </div>
                         <div class="col-lg-6">
@@ -453,15 +454,16 @@
                     <div class="row">
                         <div class="col-lg-8"></div>
                         <div class="col-lg-4">
-                            <a href="#" class="catalog  pravo"><span>Сохранить изменения</span> &nbsp;
+                            <button type = "submit"  class="catalog  pravo"><span>Сохранить изменения</span> &nbsp;
                               <span><svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                   <path class="shop" d="M1 1L6 6.07081L1 11" stroke="#202945"></path>
                                 </svg>
                               </span>
-                            </a>
+                            </button>
                          </div>
                     </div>
                   </div>
+                </form>
                   <h2 class="datas">Адрес доставки</h2>
                   <div class="information adress">
                    

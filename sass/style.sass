@@ -24,7 +24,9 @@
   font-style: normal
   src: url("../fonts/Montserrat-SemiBold.ttf") format('truetype'), url("../fonts/Montserrat-SemiBold.otf") format("opentype")
       
-
+button
+  border: none
+  background: none
 $primary-color: #202945
 h1
   color: $primary-color
@@ -32,7 +34,9 @@ body
   font-family: 'Montserrat', sans-serif
   font-weight: 400
  
-
+.hidden_h1
+  text-indent: -9999px
+  margin: 0
 a:hover
   text-decoration: none
   color: inherit
@@ -1370,7 +1374,6 @@ footer a
     float: right
 .change_password
   margin-bottom: 20px
-  margin-top: 10px
   @extend %scattered_row
   border-bottom: 0.5px solid #202945
   p
@@ -1770,6 +1773,8 @@ footer a
     margin-bottom: 60px
   .catalog
     justify-content: flex-end
+    background: none
+    border: none
   .ura
       font-size: 12px
       margin-top: -50px
@@ -1783,7 +1788,11 @@ footer a
       width: 30%
 .tabs_in
   .information
-    padding: 0   
+    padding: 0
+    label
+      span
+        display: flex
+        align-items: center   
 .big_didjest_row
   @extend %scattered_row
   padding: 0 30px
@@ -2075,7 +2084,10 @@ footer a
   margin: 0
   padding: 0
   border-bottom: 0.5px solid #C3C9CF
-
+.rovno
+  .down
+    &:hover
+      cursor: pointer
 .sitebar_item
   font-style: normal
   font-weight: normal
@@ -3138,6 +3150,7 @@ $star-spacing: 5px
 .hashtag:hover
   background: #8897B3
   color: #ffffff
+  cursor: pointer
 
 .to_cart
   font-style: normal
@@ -3709,6 +3722,9 @@ $star-spacing: 5px
     max-width: 1440px
 
 @media only screen and (max-width: 1405px)
+  .your_bonus
+    .blue_knopka
+      font-size: 8px
   .slider_fish
     .splide__slide.margin_slide 
       width: 20vw
@@ -3731,13 +3747,19 @@ $star-spacing: 5px
     margin-left: 100px
 
   .main_slider .swiper-slide
-    background-size: contain
+    background-size: cover
     background-position: bottom
     height: auto
 
   .header__znacki
     padding-top: 16%
 @media only screen and (max-width: 1370px)
+  .meropriat_container
+    .blue_knopka 
+      width: 75%
+  .clinik_exp
+    img
+      max-width: 100%  
   .scroll_container 
     height: 460px
   .boxbery_container 
@@ -3774,16 +3796,23 @@ $star-spacing: 5px
     .catalog
       font-size: 10px
  
-      
+  .holly.categories
+    .rovno:not(last-child) 
+      margin-right: 40px
+
 
   .phones
     font-size: 30px
   .sort_title 
     font-size: 10px
+  .basket
+     span
+       font-size: 10px    
   .hits_price
-    font-size: 15px
+    font-size: 12px
+    padding-left: 5px
   .new_price
-    font-size: 15px
+    font-size: 12px
   .menu__item:hover::after
     top: 90px
   .upper_header_phone 

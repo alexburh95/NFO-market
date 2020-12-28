@@ -26,6 +26,27 @@
 
 
 <body>
+  <head>
+    <meta charset="utf-8">
+    <noscript> <meta http-equiv="Refresh" content="0;URL=ShowErrorPage.html"> </noscript>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Norvegian Fish Oil" />
+    <meta name="language" content="RU" />
+    <!--css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  
+  <script src="https://unpkg.com/swiper/swiper-bundle.js" defer></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer ></script>
+  <script src="https://use.fontawesome.com/0eeda8aac6.js" defer></script>
+  
+  
+  
+    <title>NFO</title>
+  </head>
   <header class="header_main">
     <section class="upper__header">
     <div class="container-fluid">
@@ -89,7 +110,7 @@
   <main class="main">
  <section class="personal_account">
      <div class="container-fluid">
-        <h2 class="order__title">Личный кабинет</h2> 
+        <h1 class="order__title">Личный кабинет</h1> 
 
         <div class="row">
             <div class="col-lg-3">
@@ -133,12 +154,12 @@
                     </div>
                   </div>
                   <div class="row">
-                      <div class="col-lg-6">
-                          <div class="rowspan"><input type="text" placeholder="Дата">
-                              <input type="text" placeholder="Месяц">
-                              <input type="text" placeholder="Год"></div>
-                             
-                      </div>
+                    <div class="col-lg-6">
+                      <div class="rowspan"><input pattern="[0-9]{2}" type="text" value = "25" placeholder="Дата">
+                          <input type="text" pattern="[0-9]{2}" placeholder="Месяц" value = "10">
+                          <input type="text" pattern="[0-9]{4}" placeholder="Год" value ="1998"></div>
+                          <p class="ura">Поздравления и дополнительные скидки от NFO на день рождения!</p>
+                  </div>
                       <div class="col-lg-6">
                           <div class="change_password"><p>Пароль</p>
                               <a href="#" class="catalog  pravo"><span>Изменить</span> &nbsp;
@@ -154,12 +175,12 @@
                   <div class="row">
                       <div class="col-lg-8"></div>
                       <div class="col-lg-4">
-                          <a href="#" class="catalog  pravo"><span>Сохранить изменения</span> &nbsp;
-                            <span><svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="shop" d="M1 1L6 6.07081L1 11" stroke="#202945"></path>
-                              </svg>
-                            </span>
-                          </a>
+                        <button type = "submit"  class="catalog  pravo"><span>Сохранить изменения</span> &nbsp;
+                          <span><svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path class="shop" d="M1 1L6 6.07081L1 11" stroke="#202945"></path>
+                            </svg>
+                          </span>
+                        </button>
                        </div>
                   </div>
 <section class="nastroika_podpisi">
@@ -1188,7 +1209,7 @@
       </div>
     </div>
     <script src="js/sticky.min.js"></script>
-    <script src="js/scripts.js" defer></script>
+    <script src="js/scripts.js"></script>
     <script src="js/personalAccountScripts.js"></script>
    
    

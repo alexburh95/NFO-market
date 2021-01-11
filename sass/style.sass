@@ -54,7 +54,8 @@ a:hover
 header
   border-bottom: 0.5px solid #C3C9CF
   background: #ffffff
-
+.mini
+  display: none
 a
   color: inherit
 
@@ -3913,7 +3914,7 @@ $star-spacing: 5px
     z-index: 1000000000
     position: absolute
     right: 0
-    width: 635px
+    width: 80%
     background: #ffffff
     padding: 78px 84px 135px 90px
     .socseti
@@ -3958,9 +3959,54 @@ $star-spacing: 5px
   .mobile_menu
     display: block   
   
-  
+@media only screen and (max-width: 650px)
+  .footer__contacts 
+    font-size: 15px
+
+  .agreement 
+    font-size: 8px
+@media only screen and (max-width: 576px)
+  .maxi
+    display: none
+  .mini
+    display: block  
+  .special
+    display: flex
+    flex-direction: column
+  .container-fluid
+    padding: 0 10px
+  .mob_menu
+      width: 100%
+  .header__znacki:nth-child(4) 
+    padding-left: 25px
+    padding-right: 0
+  .krest 
+    padding-left: 35px
+
+  .header__znacki:not(:nth-child(3)) 
+    padding-right: 25px
+  .two
+    order: 2
+    .row
+      padding-left: 55px
+      padding-right: 85px
+      margin-top: 40px
+      margin-bottom: 70px
+      justify-content: space-between 
+  .one
+    order: 1
+    display: flex
+    justify-content: center
+  .three
+    order: 3
+  .sto
+    order: 4
+    margin-top: 60px
+  .row.foot
+    margin-top: 0
+  .agreement
+    padding-bottom: 9px  
 
 
-   
-   
+
 

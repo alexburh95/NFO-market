@@ -51,6 +51,8 @@ a:hover
 .header__znaki.like
   fill: #111
 
+.tab_slider
+  display: none
 header
   border-bottom: 0.5px solid #C3C9CF
   background: #ffffff
@@ -463,7 +465,8 @@ header
 
 .items_in_cart
   padding: 30px 0
-
+.didjest_tab
+  display: none
 .discount
   background: $primary-color
   font-style: normal
@@ -491,8 +494,7 @@ header
   margin: 80px 0
 
 .salehits
-  .container-fluid
-    padding: 0 75px
+  
 
   .icon
     margin-right: 20px
@@ -3658,6 +3660,9 @@ $star-spacing: 5px
 .upper_header_phone a
   color: #FFFFFF
 
+.swiper3
+  .swiper-pagination-bullets
+    display: none  
 .sitebar_item
   p
     margin: 0
@@ -3884,6 +3889,8 @@ $star-spacing: 5px
     padding: 0 60px  
       
 @media only screen and (max-width: 1025px)
+  .mailing
+    background-size: auto
   .expert
     .col-lg-4
       img
@@ -3898,6 +3905,50 @@ $star-spacing: 5px
     display: flex
     justify-content: flex-end 
 @media only screen and (max-width: 992px)
+  .swiper3
+    .swiper-pagination-bullets
+      display: block
+    .swiper-pagination-bullet-active
+      background: $primary-color  
+  .swiper-container.swiper4
+      &>
+        .swiper-pagination-bullets
+          bottom: 45px
+  .swiper4
+    a
+      width: 100%
+      background: #ffffff
+      display: flex
+      align-items: center
+      justify-content: center
+      height: 60px
+      margin-top: 25px
+      svg
+        margin-left: 10px
+    .slider_buttons
+      position: absolute
+      padding: 0 155px
+      bottom: 10%
+      .slider_title
+        font-size: 40px
+        color: #ffffff
+        text-transform: uppercase
+
+    
+    .swiper-slide
+      position: relative
+    
+    .swiper-pagination-bullet 
+        background: rgba(255, 255, 255, 0.5)
+    .swiper-pagination-bullet-active 
+      background: #ffffff
+    img
+      width: 100%
+  .tab_slider
+    display: block
+
+  .main_slider
+    display: none
   
   .sto
     margin-top: 100px
@@ -3969,7 +4020,51 @@ $star-spacing: 5px
     display: none
   .mobile_menu
     display: block   
-  
+
+  .vitamin
+    img:not(.iconka) 
+        width: 100%
+        max-width: 100%
+        object-fit: cover
+        height: 330px
+
+  .salehits
+    position: relative
+    .tablet_chat
+      right: 40px
+      top: -7%
+      position: absolute
+      z-index: 89
+
+
+  .container-fluid
+    padding: 0 35px
+  .chat__img
+    display: none
+  .didjest_tab
+    display: block 
+  .didjest_desctop
+    display: none
+  .expert_description
+    margin-top: 15px  
+  .expert
+     .col-lg-4
+        img 
+          width: 130px
+          height: 130px
+  .kavichki 
+    top: 123%
+    left: -100px
+  .konsult__description
+    margin-bottom: 80px  
+              
+  .leftwing
+    justify-content: flex-end
+  .mailing_form
+    input[type=email]
+      width: 395px
+  .mailing__description
+    margin-bottom: 50px                  
 @media only screen and (max-width: 650px)
   .footer__contacts 
     font-size: 15px

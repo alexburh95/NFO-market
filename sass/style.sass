@@ -81,6 +81,10 @@ a svg
 .upper__header
   .row
     align-items: center
+.mobile_menu
+  display: none
+.mob_foot
+  display: none    
 header
   img
     object-fit: none
@@ -97,6 +101,7 @@ header
   list-style-type: none
   display: flex
   justify-content: space-between
+  padding: 0
 
 .menu__item
   padding-top: 5%
@@ -3882,11 +3887,76 @@ $star-spacing: 5px
     display: flex
     justify-content: flex-end 
 @media only screen and (max-width: 992px)
+  .sto
+    margin-top: 100px
+  footer input[type=search]
+    width: 100%
+    
+  .row.foot
+    margin-top: 90px
+    align-items: baseline
+  .mob_foot
+    display: block
+  .desc_foot
+    display: none
+  .menu_contacts
+    margin-top: 150px
+    .footer__contacts
+      color: $primary-color
+
+
+  .back
+    position: absolute
+    left: -50px
+    transform: rotate(180deg)
+  .mob_menu
+    z-index: 1000000000
+    position: absolute
+    right: 0
+    width: 635px
+    background: #ffffff
+    padding: 78px 84px 135px 90px
+    .socseti
+      margin-right: 60px
+      margin-top: 65px
+    ul
+      margin: 0
+      padding: 0
+      list-style: none
+      li
+        font-size: 13px
+        margin-bottom: 25px
+        text-transform: uppercase
+    .mob_catalog
+      display: flex
+      align-items: center
+      justify-content: space-between
+      position: relative
+
+        
+    
+
+   
+
+  .header__znacki
+  
+
+    &:nth-child(4)
+      padding-left: 38px
+    
+  .krest
+      padding-left: 51px
   .glowbox 
     font-size: 12px
     padding: 0px 11px
     padding-top: 15px
     padding-bottom: 12px
+  .upper__header
+    display: none
+  .desctop_menu
+    display: none
+  .mobile_menu
+    display: block   
   
   
 

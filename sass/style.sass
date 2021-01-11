@@ -78,16 +78,19 @@ a svg
 
 .fat
   font-weight: 600 !important
-
+.upper__header
+  .row
+    align-items: center
 header
   img
     object-fit: none
-
+  .col-lg-5.right
+    display: flex
+    justify-content: flex-end
   .row
     align-items: center
-
   .container-fluid
-    padding: 0 75px
+    
     padding-bottom: 18px
 
 .header__menu
@@ -3504,7 +3507,6 @@ $star-spacing: 5px
 .upper_header_phone
   margin-bottom: 0
   font-size: 12px
-  line-height: 15px
   color: #FFFFFF
 
 .scroll_container
@@ -3783,15 +3785,13 @@ $star-spacing: 5px
     padding-top: 14px
     padding-bottom: 12px
     
-  .upper_header_phone 
-    font-size: 11px
+  
   .same_items .same__item
    width: 100%
    height: auto 
 
 @media only screen and (max-width: 1300px)
-  .upper_header_phone 
-    font-size: 10px
+  
 
 @media only screen and (max-width: 1250px)
   .tabs_title
@@ -3822,8 +3822,7 @@ $star-spacing: 5px
     font-size: 12px
   .menu__item:hover::after
     top: 90px
-  .upper_header_phone 
-    font-size: 9.5px
+  
   .mailing
     padding-bottom: 100px
   .glowbox
@@ -3838,16 +3837,24 @@ $star-spacing: 5px
   .finish_description 
     font-size: 14px
 @media only screen and (max-width: 1150px)
+  %tablet_padding
+    padding-top: 43px
+
+  .menu__item
+    @extend  %tablet_padding
+  .header__znacki
+    padding-top: 23px  
+    
+  .container-fluid
+    padding: 0 44px
   .item_raiting 
     
     align-items: flex-start
 
-  header
-    .container-fluid
-      padding: 0 44px
+  
+    
 
-  .container-fluid
-    padding: 0 44px
+  
   .item_title
     font-size: 30px
     width: 55%
@@ -3856,8 +3863,7 @@ $star-spacing: 5px
     padding: 0px 4px
     padding-top: 15px
     padding-bottom: 12px
-  .upper_header_phone 
-    font-size: 8.5px
+  
   .sostav .catalog 
     font-size: 8px
   .delivery_description 
@@ -3872,14 +3878,16 @@ $star-spacing: 5px
 @media only screen and (max-width: 1020px)
   .col-lg-4.combos 
     margin-left: 130px
+  .col-lg-5.right
+    display: flex
+    justify-content: flex-end 
 @media only screen and (max-width: 992px)
   .glowbox 
     font-size: 12px
     padding: 0px 11px
     padding-top: 15px
     padding-bottom: 12px
-  .upper_header_phone 
-    font-size: 10.5px
+  
   
 
 

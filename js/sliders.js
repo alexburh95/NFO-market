@@ -53,7 +53,17 @@ var mySwiper = new Swiper('.swiper1', {
       },
     
       // And if we need scrollbar
-      
+      breakpoints: {
+        // when window width is >= 320px
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 30
+        },
+        1020: {
+          slidesPerView: 3,
+          spaceBetween: 30
+        },
+      }
     })
   
   

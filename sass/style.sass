@@ -3909,6 +3909,8 @@ $star-spacing: 5px
     display: flex
     justify-content: flex-end 
 @media only screen and (max-width: 992px)
+  .main 
+    padding-top: 90px
   .swiper3
     .swiper-pagination-bullets
       display: block
@@ -4072,10 +4074,36 @@ $star-spacing: 5px
 @media only screen and (max-width: 650px)
   .footer__contacts 
     font-size: 15px
+  .swiper4
+    .slider_buttons
+      .slider_title
+        font-size: 30px
+
 
   .agreement 
     font-size: 8px
 @media only screen and (max-width: 576px)
+  .swiper4 
+    a
+      margin-top: 10px
+    img
+      height: 480px
+      object-fit: cover
+
+
+  .swiper-container.swiper4
+      &>
+        .swiper-pagination-bullets
+          bottom: 10px
+  .main 
+    padding-top: 50px
+
+  .swiper4
+    .slider_buttons
+      padding: 0 35px
+      bottom: 7.5%
+      .slider_title
+        font-size: 23px
   .menu_contacts
     margin-top: 33px
   .mob_menu

@@ -4087,6 +4087,34 @@ $star-spacing: 5px
   .agreement 
     font-size: 8px
 @media only screen and (max-width: 576px)
+  .mailing__title
+    font-size: 22px
+  .mailing
+    background-position: top
+    padding-bottom: 80px
+    .row
+      margin: 0 auto
+
+  .konsult__description
+    margin-bottom: 25px
+    font-size: 13px
+    padding-top: 0
+  .konsulat
+    padding-bottom: 30px
+
+    .col-12
+      display: flex
+      align-items: center
+      justify-content: space-between
+    .vitamin__h2
+      padding-left: 0
+      text-align: center
+      padding-bottom: 50px
+      br
+        display: none
+  .expert
+    .row
+      margin: 0 auto
   main
     .row
       max-width: 100% 
@@ -4096,7 +4124,8 @@ $star-spacing: 5px
   .comment
     padding-top: 33px
     font-size: 13px
-    padding-left: 30px
+   
+    margin-bottom: 27px
   .kavichki 
     top: 100%
     left: 40%
@@ -4104,24 +4133,25 @@ $star-spacing: 5px
   
   .expert_description
     font-size: 15px
-    padding-left: 30px
+   
     padding-bottom: 30px
     position: relative
     &::before
       content: ""
-      width: 80px
+      width: 75px
       height: 1px
       background: #C3C9CF
       position: absolute
-      bottom: -20px
+      bottom: -15px
+      left: 0
     &::after
       content: ""
-      width: 80px
+      width: 75px
       height: 1px
       background: #C3C9CF
       position: absolute
-      bottom: -20px
-      right: 30px  
+      bottom: -15px
+      right: 0px  
 
   .expert__name
     font-size: 15px
@@ -4136,10 +4166,13 @@ $star-spacing: 5px
       img
         width: 110px
         height: 110px
-        margin-top: -100px
+        margin-top: -50px
        
   .swiper3.swiper-container
     padding-top: 100px
+    .swiper-pagination
+      position: unset
+      padding-top: 10px
   .expert__title
     display: none
     
@@ -4159,6 +4192,12 @@ $star-spacing: 5px
   .vitamin
       margin-top: 55px
       padding-bottom: 25px
+      
+      .row
+        justify-content: center
+        margin: 0 auto
+        img
+          height: auto
       .catalog
         margin-bottom: 25px
       .row
@@ -4166,9 +4205,9 @@ $star-spacing: 5px
   .vitamin__h2
     font-size: 20px
     padding-top: 55px
-    padding-left: 25px
+    text-align: center
     span
-      padding-left: 6%
+      padding-left: 0
   .strelki
     display: none
 
@@ -4222,7 +4261,7 @@ $star-spacing: 5px
     display: flex
     flex-direction: column
   .container-fluid
-    padding: 0 10px
+    padding: 0 25px
   .mob_menu
       width: 100%
   .header__znacki:nth-child(4) 
@@ -4236,7 +4275,7 @@ $star-spacing: 5px
   .two
     order: 2
     .row
-      padding-left: 15%
+      padding-left: 7%
       margin-top: 40px
       margin-bottom: 70px
       .col-1

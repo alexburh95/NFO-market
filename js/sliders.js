@@ -148,7 +148,16 @@ var mySwiper = new Swiper('.swiper1', {
         delay: 25000000,
         disableOnInteraction: false,
       },
-    
+      breakpoints: {
+        576: {
+          slidesPerView: 2,
+          spaceBetween: 30
+        },
+        300: {
+          slidesPerView: 1,
+          spaceBetween: 30
+        },
+      },
       // If we need pagination
      
     

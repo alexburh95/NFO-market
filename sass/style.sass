@@ -106,6 +106,8 @@ header
   display: flex
   justify-content: space-between
   padding: 0
+.sort_tab
+    display: none  
 
 .menu__item
   padding-top: 5%
@@ -3893,6 +3895,16 @@ $star-spacing: 5px
     padding: 0 60px  
       
 @media only screen and (max-width: 1025px)
+  .sort_title 
+    justify-content: flex-end
+  .phones 
+    font-size: 22px
+  .hits__bank
+    width: 41%
+  .salehits__item__content_top
+    margin-bottom: 20px  
+    
+
   .footer__contacts 
     font-size: 18px
   .mailing
@@ -3911,6 +3923,76 @@ $star-spacing: 5px
     display: flex
     justify-content: flex-end 
 @media only screen and (max-width: 992px)
+  .phones
+    font-size: 32px
+  
+  .show__more
+    padding-bottom: 100px
+
+    .sort_title
+      font-size: 13px
+      justify-content: center
+  .new_price, .hits_price
+    font-size: 15px
+   
+
+
+  .hits__bank 
+    width: 50%
+  .salehits__item
+    &:hover
+      .icon
+        margin-right: 20px
+      .basket
+        span
+          display: none
+
+  .bread_item
+    font-size: 11px
+    text-transform: lowercase
+  .sort_tab
+    display: block
+    margin-right: 15px
+  %filters_big
+    font-size: 13px
+    color: $primary-color
+    text-transform: uppercase
+
+  .holly 
+    z-index: 999
+    display: flex
+    justify-content: flex-end
+    align-items: center
+  .all_products
+    display: none
+  .filter_button
+    display: flex
+    align-items: center
+    @extend  %filters_big
+   
+    img
+      margin-right: 15px
+   
+  .special
+      display: flex 
+      flex-direction: column
+  .catalog_main
+      .breadcrumbs
+        padding-top: 25px
+       
+      .row.change
+        order: -1
+        padding-top: 30px
+        flex-direction: row-reverse
+        .down
+            display: none
+        .sort_title
+          @extend  %filters_big
+          
+
+       
+      .catalog__title
+        display: none
   .main 
     padding-top: 90px
   .swiper3
@@ -4008,8 +4090,12 @@ $star-spacing: 5px
     
 
    
+  
 
   .header__znacki
+    &.hamb
+      padding-right: 0
+
   
 
     &:nth-child(4)
@@ -4258,7 +4344,7 @@ $star-spacing: 5px
   .maxi
     display: none
   .mini
-    display: block  
+    display: flex 
   .special
     display: flex
     flex-direction: column

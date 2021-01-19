@@ -4,7 +4,7 @@ const container = document.querySelectorAll(".slash");
 
 const closeAll = document.querySelector('.close_all')
 
-
+const allIpnputs = document.querySelectorAll('input');
 
 
 
@@ -46,7 +46,7 @@ counter.style.display = "none";
   });
 
   closeAll.addEventListener('click', ()=>{
-    const allIpnputs = document.querySelectorAll('input');
+   
     allIpnputs.forEach(item=>{
 item.checked=false;
 
@@ -59,7 +59,7 @@ item.checked=false;
     })
     
     count = 0;
-    const containers = document.querySelectorAll('.include_form')
+   
   
 })
 

@@ -60,7 +60,7 @@ header
   border-bottom: 0.5px solid #C3C9CF
   background: #ffffff
 .mini
-  display: none
+  display: none !important
 a
   color: inherit
 
@@ -2748,7 +2748,9 @@ footer a
   width: 85%
   color: $primary-color
   margin-bottom: 50px
-
+.same_items_content_top
+  .icon
+    display: none
 .skidochka
   position: absolute
   font-style: normal
@@ -2771,6 +2773,10 @@ footer a
 
 .specialcol6
   max-width: 630px
+
+.delivery_description
+  .down
+    display: none
 
 .back1
   background-image: url('../img/stokssummer.png')
@@ -3670,6 +3676,9 @@ $star-spacing: 5px
 .upper_header_phone a
   color: #FFFFFF
 
+.same_items
+  .catalog
+    justify-content: flex-end  
 .swiper3
   .swiper-pagination-bullets
     display: none  
@@ -3858,6 +3867,9 @@ $star-spacing: 5px
   .finish_description 
     font-size: 14px
 @media only screen and (max-width: 1150px)
+  .tabs_title 
+    font-size: 15px
+
   .slider__button
     margin-top: 35px
   %tablet_padding
@@ -3899,6 +3911,8 @@ $star-spacing: 5px
     padding: 0 60px  
       
 @media only screen and (max-width: 1025px)
+  .delivery_description
+    font-size: 12px
   .sort_title 
     justify-content: flex-end
   .phones 
@@ -3927,6 +3941,101 @@ $star-spacing: 5px
     display: flex
     justify-content: flex-end 
 @media only screen and (max-width: 992px)
+  .mini__img
+    padding: 10px 15px
+  .same_items
+    .catalog
+      margin-top: -15px
+    .row.borders::after
+      width: 100%
+      margin-left: 0
+    .row.align
+      align-items: flex-start
+
+    .same_items_content_top
+      padding: 10px
+    .hits__bank
+      width: 42%
+  .tohether_cheeper
+    .col-lg-3.col-sm-6
+      img
+        max-width: 100%
+
+
+  
+  .col-lg-4.combos
+    margin-left: 0
+  .feedback
+    padding-top: 10px
+  .vnutr1, .vnutr2, .vnutr3
+    padding-top: 40px
+
+  .raiting_row
+    display: flex
+    align-items: center
+  .mobile_container
+    margin-top: 50px
+    
+    .sitebar_item
+      margin: 0
+      padding: 25px 0
+      border-top: 0.5px solid #C3C9CF
+      border-bottom: 0.5px solid #C3C9CF
+      p
+        font-size: 20px
+  .dop_tabs
+    display: none
+
+  .delivery_top .img_banks_row
+    width: 100%
+
+  .delivery_description
+    display: flex
+    align-items: center
+    .down
+      display: block
+  .rights
+    .change
+      display: none
+  .delivery_titile
+    width: 100% 
+  .delivery_top
+    margin-top: 0
+  .catalog.item
+    display: none
+  .row.hastags
+    margin-top: 0
+  .parametr
+    font-size: 12px
+
+
+  .cartlike
+    margin-bottom: 45px
+    .to_cart
+      width: 100%
+
+  .mobile_like
+    display: none
+
+  .same_items_content_top
+    padding: 20px
+    .icon
+      display: block
+      transform: scale(1.4)
+  .sales_item
+    margin-top: 5px
+
+  .item_title
+    width: 100%
+    font-size: 20px 
+  .item_raiting span
+    display: none
+  .rating
+    display: none
+  .discount-same
+    width: 70px
+    height: 40px
+    font-size: 20px 
   .hidden_menu
     right: 0
     left: none
@@ -4273,6 +4382,10 @@ $star-spacing: 5px
   .agreement 
     font-size: 8px
 @media only screen and (max-width: 576px)
+  .salehits__item:hover .icon.like
+    margin-right: 5px
+  .salehits__item:hover .basket
+    display: none  
 
   .phones 
     font-size: 15px

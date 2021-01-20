@@ -3911,6 +3911,8 @@ $star-spacing: 5px
     padding: 0 60px  
       
 @media only screen and (max-width: 1025px)
+  .raiting_row
+    display: flex
   .delivery_description
     font-size: 12px
   .sort_title 
@@ -4382,6 +4384,85 @@ $star-spacing: 5px
   .agreement 
     font-size: 8px
 @media only screen and (max-width: 576px)
+  .same_items
+    .itog
+      margin-top: 0
+    .to_cart
+      background: none
+      color: $primary-color
+      font-size: 10px
+      width: 100%
+      padding-left: 0
+      justify-content: flex-end
+    .row.borders
+      .rowspan
+        margin-top: 60px
+        justify-content: space-between
+    .comboset
+      font-size: 13px
+      max-width: 50%
+    .container-fluid
+      padding: 0 10px
+    .col-lg-5.col-sm-8.col-7
+      padding-left: 0
+    .usual_price, .cheeper_price_new
+      font-size: 13px 
+    .catalog.mini
+      margin-top: 0
+      span
+        font-size: 10px
+    .hashtag
+      display: none
+    .same__item
+      display: block
+      margin: 0 auto
+      text-align: center
+      padding: 20px 0
+      .hits__bank
+        width: 52%
+    
+      .same_items_content_top
+        position: relative
+        padding: 0
+        a
+          position: absolute
+          transform: scale(0.8)
+          right: -150%
+        span
+          display: none
+
+  .same_items_title 
+    text-align: center
+    font-size: 15px
+    margin: 0 auto
+  .cheeper_price
+    margin-bottom: 10px
+  .comboset
+    margin-top: 10px
+  .delivery_top .delivery_titile , .delivery_description
+    font-size: 9px
+  .delivery_top
+    background-color: #F8F8F8
+  .hashtag
+    font-size: 9px
+  .cartlike .to_cart
+    margin-right: 0 
+  .catalog_item .perecluch
+    margin: 0 auto
+  .item_title
+    padding-top: 30px
+  .swiper3.mini.swiper-container
+    flex-direction: column
+    align-items: center
+    background: #F8F8F8
+    padding-top: 0
+    padding-bottom: 20px
+    .swiper-slide
+      text-align: center
+    .big_photo
+      padding: 0
+  .same__item
+    display: none
   .salehits__item:hover .icon.like
     margin-right: 5px
   .salehits__item:hover .basket
@@ -4640,7 +4721,7 @@ $star-spacing: 5px
   .maxi
     display: none
   .mini
-    display: flex 
+    display: flex  !important
   .special
     display: flex
     flex-direction: column

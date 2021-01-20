@@ -37,6 +37,7 @@ button
   border: none
   background: none
 $primary-color: #202945
+$sotka : 100%
 h1
   color: $primary-color
 body
@@ -3943,6 +3944,20 @@ $star-spacing: 5px
     display: flex
     justify-content: flex-end 
 @media only screen and (max-width: 992px)
+  .set_item
+
+    &:hover
+      .basket
+        span
+          display: none
+    background-size: cover
+
+  .create_set, .set_item
+    width: $sotka
+    height: 50%
+    min-height: 270px
+
+
   .mini__img
     padding: 10px 15px
   .same_items
@@ -4384,6 +4399,28 @@ $star-spacing: 5px
   .agreement 
     font-size: 8px
 @media only screen and (max-width: 576px)
+  .catalog_main
+    .create_set, .set_item
+      min-height: 210px
+    .col-lg-4.col-sm-4.col-6
+      padding-left: 5px
+      padding-right: 5px
+  .breadcrumbs
+    padding-bottom: 10px
+  .create_set_title
+    margin-bottom: 15px
+    background-color: $primary-color
+    justify-content: center
+    align-items: center
+    display: flex
+    width: 100%
+    color: #ffffff
+    height: 45px
+    svg
+      path
+        stroke: #ffffff
+  .create_set
+    display: none
   .same_items
     .row
       max-width: 100%

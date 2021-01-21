@@ -3311,7 +3311,7 @@ $star-spacing: 5px
   display: none
 
 .view
-  display: block
+  display: block !important
 
 .small_img
   width: 54px
@@ -3936,6 +3936,32 @@ $star-spacing: 5px
     padding: 0 60px  
       
 @media only screen and (max-width: 1025px)
+  .col-lg
+      display: none
+  .information
+    .col-xl-4.col-lg-6
+      display: flex
+      justify-content: flex-end
+
+  .your_bonus
+    padding: 25px 20px
+  .include_punk_content1 .pravo
+    margin-right: 0
+  .welcome_account
+    .col-lg
+      display: none
+    .loading_scale
+      margin-top: 5px
+      margin-bottom: 5px
+    .pad_30
+      padding: 0 20px
+  .your_zakazes
+    padding: 30px 20px
+  
+  .hello_popup
+    width: 100%
+    top: 0
+    left: 0
   .kresto
     right: 5% 
   .favorit
@@ -4653,6 +4679,7 @@ $star-spacing: 5px
       margin-top: 0
     .favorites_title
       margin-bottom: 30px
+      margin-top: 30px
     .same_items_content_top
       margin-bottom: 0
     .col-xl-2.col-lg-3.col-sm-4.col-4, .col-xl-4.col-lg-4.col-sm-8.col-6

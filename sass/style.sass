@@ -2251,7 +2251,7 @@ footer a
   content: ""
   height: 0.5px
   background-color: #C3C9CF
-  width: 78%
+  width: 80%
   top: 10px
   margin: 10px
   margin-left: 9.5%
@@ -2261,8 +2261,8 @@ footer a
 
 .kresto
   position: absolute
-  top: -50px
-  right: 60px
+  top: 0px
+  right: 10%
 
 .favorit
   .col-lg-3 .catalog
@@ -3936,6 +3936,15 @@ $star-spacing: 5px
     padding: 0 60px  
       
 @media only screen and (max-width: 1025px)
+  .kresto
+    right: 5% 
+  .favorit
+    .align::after
+      width: 100%
+      margin-left: 0
+    .catalog
+      justify-content: flex-end
+  
   
   .create_new_set
     .choosen_item_title
@@ -3984,6 +3993,15 @@ $star-spacing: 5px
     display: flex
     justify-content: flex-end 
 @media only screen and (max-width: 992px)
+  .favorit
+    
+    .row.align
+      align-items: flex-start
+    .col-xl-2.col-lg-2.col-sm-0.col-0
+      display: none
+
+  .thanks_for_order .blue_knopka
+    width: 100%
   .delivery_container_form 
     padding: 0 15px
   .recomendation
@@ -4598,6 +4616,10 @@ $star-spacing: 5px
   .agreement 
     font-size: 8px
 @media only screen and (max-width: 576px)
+  .row_summ.bigs
+    margin-top: 30px
+  .finish_itog
+    font-size: 13px
   .add_to_zakaz
     display: none
   .order__title

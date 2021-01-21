@@ -2839,10 +2839,10 @@ footer a
     content: ""
     height: 0.5px
     background-color: #C3C9CF
-    width: 78%
+    width: 92%
     top: 10px
     margin: 10px
-    margin-left: 9.5%
+   
 
   margin: 19px 0
   position: relative
@@ -3884,7 +3884,14 @@ $star-spacing: 5px
       font-size: 10px
   .finish_description 
     font-size: 14px
+  
 @media only screen and (max-width: 1150px)
+  .row_summ.bigs
+    flex-direction: column
+    align-items: baseline
+  .row_knopka
+    .finish_description
+      width: 55%
   .tabs_title 
     font-size: 15px
 
@@ -3929,6 +3936,7 @@ $star-spacing: 5px
     padding: 0 60px  
       
 @media only screen and (max-width: 1025px)
+  
   .create_new_set
     .choosen_item_title
       width: 90%

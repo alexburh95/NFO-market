@@ -61,3 +61,19 @@ tik.addEventListener('click', function() {
 window.popup.classList.toggle('hidden');
 strela.classList.toggle('up');
 });
+
+const containerAddNabor = document.querySelector('.add_nabor_to_cart')
+const add_nabor = containerAddNabor.querySelector('.podrob')
+const soderjimoe =  containerAddNabor.querySelector('.products_in_cart_container')
+const skrit = containerAddNabor.querySelector('.skrit')
+
+window.slash(add_nabor, soderjimoe)
+skrit.addEventListener('click', () =>{
+    soderjimoe.classList.add('hidden')
+    add_nabor.classList.remove('hidden')
+})
+
+add_nabor.addEventListener('click', () =>{
+    add_nabor.classList.add('hidden')
+   
+})

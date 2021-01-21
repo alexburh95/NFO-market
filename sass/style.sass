@@ -2832,6 +2832,8 @@ footer a
   margin-bottom: 40px
   color: $primary-color
 
+  
+
 .add_to_zakaz .align
   &::after
     content: ""
@@ -3735,7 +3737,13 @@ $star-spacing: 5px
   background: url('../img/nfo_fon.png') no-repeat
 .specialist
     background: url('../img/special_fon.png') no-repeat    
-
+.create_new_set
+    .salehits__item
+      .basket
+        svg
+          display: none
+.add_nabor_to_cart
+  display: none          
 @media only screen and (max-width: 1700px)
   .slider_fish
     .splide__slide.margin_slide 
@@ -3794,6 +3802,13 @@ $star-spacing: 5px
   .header__znacki
     padding-top: 16%
 @media only screen and (max-width: 1370px)
+  .create_new_set
+    .salehits__item
+      .basket
+        svg
+          display: block
+        span
+          display: none
   .meropriat_container
     .blue_knopka 
       width: 75%
@@ -3819,7 +3834,9 @@ $star-spacing: 5px
   
   .same_items .same__item
    width: 100%
-   height: auto 
+   height: auto
+  .create_new_set .salehits__item
+    height: auto  
 
 @media only screen and (max-width: 1300px)
   
@@ -3912,6 +3929,21 @@ $star-spacing: 5px
     padding: 0 60px  
       
 @media only screen and (max-width: 1025px)
+  .create_new_set
+    .choosen_item_title
+      width: 90%
+    .box_animation
+      margin-bottom: 20px
+      img
+        transform: scale(0.8)
+    .animate_bottle
+      margin-bottom: 0
+      margin-top: 0
+    .bread_item
+      font-size: 8px
+  .holly.categories .rovno:not(last-child)
+    margin-right: 20px
+
   .raiting_row
     display: flex
   .delivery_description
@@ -3944,6 +3976,108 @@ $star-spacing: 5px
     display: flex
     justify-content: flex-end 
 @media only screen and (max-width: 992px)
+  .add_nabor_to_cart
+    background: #ffffff
+    box-shadow: 0px -1px 5px rgba(32, 41, 69, 0.1)
+    display: block
+    border-radius: 10px 10px 0 0
+    padding: 30px 40px
+    .product_obertka
+      padding: 15px 0
+      border-bottom: 0.5px solid #C3C9CF
+
+    .sales
+      padding-left: 0
+      .new_price, .hits_price
+        font-size: 15px
+    .perecluch
+      .count
+        padding: 0 25px
+      button
+        border-radius: 50%
+        width: 30px
+        height: 30px
+        margin-top: 0
+    .products_in_cart_container
+      padding-bottom: 200px
+      choosen_item_title
+        font-size: 15px
+      .rowchcik
+        margin-bottom: 50px
+      h3
+        font-size: 20px
+        text-transform: uppercase
+        margin: 0
+      .skrit
+        svg
+          transform: rotate(90deg)
+
+    button
+      margin-top: 25px
+      width: 100%
+      background: $primary-color
+      height: 60px
+      display: flex
+      align-items: center
+      justify-content: center
+      text-transform: uppercase
+      color: #ffffff
+      font-size: 13px
+    .rowchcik
+      display: flex
+      align-items: center
+      justify-content: space-between
+      
+      a
+        svg
+          transform: rotate(-90deg)
+      p
+        display: flex
+        align-items: center
+        font-size: 16px
+        margin-bottom: 0
+
+    
+  .add_to_cart
+    display: block
+    font-size: 10px
+    width: 100%
+    height: 30px
+    background: $primary-color
+    display: flex
+    align-items: center
+    justify-content: center
+    text-transform: uppercase
+    color: #ffffff
+    margin-bottom: 30px
+    svg
+      margin-left: 10px
+  .create_new_set
+    .hits__title
+      margin-bottom: 5px
+      padding-top: 5px
+    .add_to_cart
+      display: flex
+    .salehits__item__content_top
+      padding-bottom: 0
+      padding-top: 15px
+      margin-bottom: 0
+    
+    .add_to_set
+      display: none
+    .breadcrumbs
+      padding-top: 25px
+    .row.change
+      order: -1
+      padding-top: 30px
+      flex-direction: row-reverse
+    .row.max
+      display: none 
+    .row.mini
+      display: flex !important  
+    .catalog__title
+      display: none
+
   .set_item
 
     &:hover
@@ -4513,20 +4647,7 @@ $star-spacing: 5px
   .hotline
     margin-top: 20px
     font-size: 13px
-  .add_to_cart
-    display: block
-    font-size: 10px
-    width: 100%
-    height: 30px
-    background: $primary-color
-    display: flex
-    align-items: center
-    justify-content: center
-    text-transform: uppercase
-    color: #ffffff
-    margin-bottom: 30px
-    svg
-      margin-left: 10px
+
 
   .catalog_main .icon, .recomendation .icon, .catalog_main .icon 
     margin-right: 5px

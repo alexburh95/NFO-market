@@ -44,7 +44,7 @@ var mySwiper = new Swiper('.swiper1', {
           spaceBetween: 30
         },
         320: {
-          slidesPerView: 1,
+          slidesPerView: 2,
           spaceBetween: 30
         },
       },
@@ -115,7 +115,7 @@ var mySwiper = new Swiper('.swiper1', {
       
     });
 
-    var mySwiper = new Swiper('.swiper4', {
+    var mySwiper4 = new Swiper('.swiper4', {
       // Optional parameters
       direction: 'horizontal',
       loop: true,
@@ -138,7 +138,7 @@ var mySwiper = new Swiper('.swiper1', {
     
       // And if we need scrollbar
     })
-    var mySwiper = new Swiper('.swiper5', {
+    var mySwiper5 = new Swiper('.swiper5', {
       // Optional parameters
       direction: 'horizontal',
       loop: true,
@@ -169,3 +169,4 @@ var mySwiper = new Swiper('.swiper1', {
     
       // And if we need scrollbar
     })
+

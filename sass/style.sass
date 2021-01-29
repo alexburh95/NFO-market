@@ -3759,6 +3759,10 @@ $star-spacing: 5px
 
 
 @media only screen and (max-width: 1450px)
+  .expert__img
+    max-width: 100%
+    width: auto
+    height: auto
   .slider_fish
     .splide__slide.margin_slide 
       width: 21vw
@@ -4019,6 +4023,19 @@ $star-spacing: 5px
     display: flex
     justify-content: flex-end 
 @media only screen and (max-width: 992px)
+  .konsulat_row_mini
+    font-size: 13px
+    color: #7B8797
+  .sales
+    display: flex
+    .hits_price 
+      order: -1
+      margin-right: 10px
+    
+      
+  .salehits__item__content_bottom, .salehits__item__content_top
+    padding-top: 11px
+
   .img_fish
     width: 65%
   .special_header.special
@@ -4598,6 +4615,8 @@ $star-spacing: 5px
     width: 80%
     background: #ffffff
     padding: 78px 84px 135px 90px
+    height: 75vh
+    overflow-y: auto
     .socseti
       margin-right: 60px
       margin-top: 65px
@@ -4656,10 +4675,12 @@ $star-spacing: 5px
     position: relative
     .tablet_chat
       right: 40px
-      top: -7%
+      
       position: absolute
       z-index: 89
       display: block
+      position: fixed
+      top: 90%
 
 
   .container-fluid
@@ -4702,6 +4723,8 @@ $star-spacing: 5px
   .agreement 
     font-size: 8px
 @media only screen and (max-width: 576px)
+  header .container-fluid
+    padding-bottom: 10px
   .main_a
     padding-bottom: 60px
   .error_404
@@ -5171,6 +5194,11 @@ $star-spacing: 5px
       font-size: 13px 
     .sales
       padding-left: 5px
+      display: flex
+      .new_price
+        order: -1
+        margin-left: 10px
+
     .basket
       display: none
     .hits__bank 
@@ -5181,10 +5209,10 @@ $star-spacing: 5px
       margin-bottom: 0
   .salehits__item__content_top 
     span 
-      width: 30px
-      height: 20px
-      font-size: 9px
-      margin-left: 5px    
+      width: 45px
+      height: 25px
+      font-size: 13px
+      margin-left: 10px    
   .reset_filters, .show_items
     height: 45px
     font-size: 10px
@@ -5344,7 +5372,7 @@ $star-spacing: 5px
   .salehits
       .tablet_chat
         right: 0
-        top: -4%
+      
         width: 15%
 
   .swiper4 

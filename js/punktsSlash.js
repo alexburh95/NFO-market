@@ -10,8 +10,16 @@ const tre = document.querySelector('.tre');
 const treContent = document.querySelector('.include_punk_content3');
 const quatro = document.querySelector('.quatro');
 const quatroContent = document.querySelector('.include_punk_content4');
+const openAccordeons = (my_class) =>{
 
-
+    if(window.screen.width<=576){
+        my_class.classList.add('hidden')
+    }
+}
+openAccordeons(unoContent);
+openAccordeons(duoContent);
+openAccordeons(treContent);
+openAccordeons(quatroContent);
 window.slash(duo, duoContent);
 window.slash(tre, treContent);
 window.slash(quatro, quatroContent);

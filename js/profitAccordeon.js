@@ -2,7 +2,9 @@
 
 const accordions = document.querySelectorAll(".article_row");
 const acordeonContent = document.querySelectorAll(".acordeon");
-
+acordeonContent.forEach(element => {
+  element.classList.add('hidden')
+});
 accordions.forEach((item) => {
   const button = item.querySelector(".acardeon_titile");
   button.addEventListener('click',(e)=>{

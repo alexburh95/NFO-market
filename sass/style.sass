@@ -555,6 +555,15 @@ header
   line-height: 20px
   color: $primary-color
   padding-top: 19px
+.didjest_main
+  .col-lg-7, .col-lg-3, .col-lg-4
+    margin-bottom: 60px
+  .row
+    justify-content: center
+  .row.finish
+    padding-bottom: 150px
+        
+    
 
 .salehits__item:hover
   svg .shop
@@ -607,7 +616,8 @@ header
   margin-top: 140px
   padding-bottom: 60px
   background: #F8F8F8
-
+.didjest_3 img
+  width: 100%
 .vitamin__h2
   font-style: normal
   font-weight: 600
@@ -4023,6 +4033,27 @@ $star-spacing: 5px
     display: flex
     justify-content: flex-end 
 @media only screen and (max-width: 992px)
+  .didjest_main
+    .all_products
+      margin: 0
+    padding-top: 25px
+    .holly
+      justify-content: flex-start
+    .all_products
+      display: block
+  .clinik_exp
+    .col-lg-4.col-sm-6
+      margin-bottom: 40px
+    .col-lg-4.col-sm-12
+      img
+        width: 100%
+  .partner_programm .blue_knopka 
+    width: 50%
+  .special_header.special h1
+    padding: 60px 0
+  .partner__title
+    text-align: center
+    margin-top: 50px
   .konsulat_row_mini
     font-size: 13px
     color: #7B8797
@@ -4723,6 +4754,77 @@ $star-spacing: 5px
   .agreement 
     font-size: 8px
 @media only screen and (max-width: 576px)
+  .special_header.special.story
+    h1
+      padding-top: 35px
+    
+  .clinik__title
+    margin-bottom: 35px
+  .partner_programm
+    .row_of_buttons
+      flex-direction: column
+      padding-bottom: 0
+      .blue_knopka
+        margin-right: 0
+        width: 100%
+        margin-bottom: 10px
+      .catalog 
+          font-size: 10px
+          border: 0.5px solid #202945
+          width: 100%
+          justify-content: center
+          height: 45px    
+  .special_obertka
+    position: relative
+  .products_in_cart_container
+    position: absolute
+    top: -360px
+    background-color: white
+    width: 100%
+    left: 0
+    border-radius: 10px 10px 0 0
+    padding: 20px 25px
+  .catalog_item
+    .item_raiting
+      order: 1
+
+    .sales_item
+      order: 2
+    .col-lg-12.col-12.carts
+      order: 4
+    .forma
+      order: 3
+      margin-top: 25px
+      .parametr, .parametr_value
+        margin: 0
+    .col-lg-12.col-12
+      order: 5
+    .delivery_top
+      order: 8
+    .col-lg-6.col-sm-6
+      display: flex
+      flex-direction: column
+  .row.sposobi
+    display: none
+  .choosen_item
+    left: 0
+    top: 0
+    z-index: 999
+    right: 0
+    margin: 0 auto
+  .catalog_item
+    .breadcrumbs
+      display: none
+  .dop_mini
+    .salehits__item__content_top
+      margin-bottom: 0
+    .sales
+      padding-left: 0  
+    .hits_price
+      padding-left: 0
+
+    .hits__title
+      font-size: 13px
   header .container-fluid
     padding-bottom: 10px
   .main_a
@@ -5047,6 +5149,7 @@ $star-spacing: 5px
     width: 100%
     left: 0
     padding: 20px 25px
+    position: fixed
     .skrit
       span
         display: none
@@ -5195,9 +5298,9 @@ $star-spacing: 5px
     .sales
       padding-left: 5px
       display: flex
-      .new_price
+      .hits_price
         order: -1
-        margin-left: 10px
+        
 
     .basket
       display: none

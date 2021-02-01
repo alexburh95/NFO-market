@@ -1,29 +1,8 @@
+@import general_setting
+@import header
 
   
-@font-face 
-  font-family: "Montserrat"
-  font-display: swap
-  font-weight: 300
-  font-style: normal
-  src: url("../fonts/Montserrat-Light.ttf") format('truetype'), url("../fonts/Montserrat-Light.otf") format("opentype")
-      
 
-
-@font-face 
-  font-family: "Montserrat"
-  font-display: swap
-  font-weight: 400
-  font-style: normal
-  src: url("../fonts/Montserrat-Regular.ttf") format('truetype'), url("../fonts/Montserrat-Regular.otf") format("opentype")
-      
-
-@font-face 
-  font-family: "Montserrat"
-  font-display: swap
-  font-weight: 600
-  font-style: normal
-  src: url("../fonts/Montserrat-SemiBold.ttf") format('truetype'), url("../fonts/Montserrat-SemiBold.otf") format("opentype")
-      
 .disabled_js
   padding: 50px
   text-align: center
@@ -33,16 +12,9 @@
 .didjest_3
   a
     position: absolute
-button
-  border: none
-  background: none
-$primary-color: #202945
-$sotka : 100%
-h1
-  color: $primary-color
-body
-  font-family: 'Montserrat', sans-serif
-  font-weight: 400
+
+
+
  
 .hidden_h1
   text-indent: -9999px
@@ -57,22 +29,15 @@ a:hover
 
 .tab_slider
   display: none
-header
-  border-bottom: 0.5px solid #C3C9CF
-  background: #ffffff
+
 .mini
   display: none !important
 a
   color: inherit
 
-header a
-  color: $primary-color
 
-a svg:hover .shop
-  stroke: #8897B3
 
-header a svg:hover .like
-  fill: none
+
 
 a svg
   &:hover .like
@@ -85,61 +50,29 @@ a svg
 
 .fat
   font-weight: 600 !important
-.upper__header
-  .row
-    align-items: center
-.mobile_menu
-  display: none
+
+
 .mob_foot
   display: none    
-header
-  img
-    object-fit: none
-  .col-lg-5.right
-    display: flex
-    justify-content: flex-end
+
+ 
   .row
     align-items: center
   .container-fluid
     
     padding-bottom: 18px
 
-.header__menu
-  list-style-type: none
-  display: flex
-  justify-content: space-between
-  padding: 0
+
 .sort_tab
     display: none  
 
-.menu__item
-  padding-top: 5%
-  font-style: normal
-  font-weight: normal
-  font-size: 11px
-  line-height: 15px
-  display: flex
-  align-items: center
-  text-align: center
-  text-transform: uppercase
-  color: $primary-color
-  position: relative
 
-  a:hover
-    text-decoration: none
 
 .mailing input[type='email']:focus
   outline: none
 
-.menu__item:hover::after
-  content: ""
-  position: absolute
-  color: $primary-color
-  width: 100%
-  height: 2px
-  background-color: $primary-color
-  top: 95px
-  z-index: 2
+
+ 
 
 .konsulat .vitamin__h2
   padding-bottom: 100px
@@ -151,16 +84,9 @@ header
   path, line
     stroke: #8897B3
 
-.znackki
-  display: flex
-  align-items: center
-  justify-content: flex-end
 
-.header__znacki
-  padding-top: 10%
 
-  &:not(:nth-child(3))
-    padding-right: 38px
+
 
 .swiper1
   width: 100%
@@ -1068,9 +994,7 @@ footer img
   margin-top: 60px
   margin-bottom: 170px
 
-.header_main
-  z-index: 8000000000
-  max-width: 100%
+
 
 .same_items .same__item
   width: 190px
@@ -1205,20 +1129,10 @@ footer a
   color: $primary-color
   width: 100%
   position: absolute
-%little_paragraph
-   font-style: normal
-   font-weight: normal
-   font-size: 11px
-   color: $primary-color
-   text-transform: uppercase
-   display: flex
-   align-items: center
+
 .didjest_main
   padding-top: 120px
-%didjest_scale
-  transform: scale(1.009)
-  transition-duration: 200ms
-  transition-timing-function: ease-in-out
+
 
 .big_didjest
   
@@ -1291,10 +1205,7 @@ footer a
     right: 15%
   .icon
     margin-right: 20px 
-%set_sizes
-  width: 300px
-  height: 390px
-  max-width: 100%
+
 .add_to_set
   @extend %set_sizes
   height: auto
@@ -1353,10 +1264,7 @@ footer a
 
 .bottle-paused 
   animation-play-state: paused
-%scattered_row
-  display: flex
-  align-items: center
-  justify-content: space-between
+
 .zakaz_data
   display: flex
   align-items: center
@@ -2081,8 +1989,7 @@ footer a
 .hidden_menu
   top: -19px
 
-.hidden
-  display: none !important
+
 
 .holly
   z-index: 999
@@ -2677,8 +2584,7 @@ footer a
 
 .change .nazad
   transform: rotate(180deg)
-.header_delivery
-  margin-right: 10px
+
   
 .spoon_fat
   position: absolute
@@ -2955,11 +2861,7 @@ footer a
   dislay: flex
   align-items:center
 
-$stars: 5
-$star-spacing: 5px
-%row_span
-  display: flex
-  align-items: center
+
 .row_span
   display: flex
 .rating
@@ -3535,16 +3437,8 @@ $star-spacing: 5px
 .tohether_img
   width: 100%
 
-.upper__header
-  background: $primary-color
-  height: 40px
-  display: flex
-  align-items: center
 
-.upper_header_phone
-  margin-bottom: 0
-  font-size: 12px
-  color: #FFFFFF
+
 
 .scroll_container
   &::-webkit-scrollbar-track
@@ -3560,23 +3454,9 @@ $star-spacing: 5px
     height: 70px
     background: #7B8797
 
-.upper__header .container-fluid
-  padding-bottom: 0
 
-.glowbox
-  background: linear-gradient(90.73deg, #5ABFEB 2.73%, #C786FA 98.29%)
-  font-size: 11px
-  text-align: center
-  text-transform: uppercase
-  color: #FFFFFF
-  border: 0
-  width: 100%
-  height: 40px
-  a
-    color: #FFFFFF
-  &:hover
-    a
-      color: #000000
+
+
   
 
 
@@ -3686,8 +3566,7 @@ $star-spacing: 5px
   text-transform: uppercase
   color: $primary-color
 
-.upper_header_phone a
-  color: #FFFFFF
+
 
 .same_items
   .catalog
@@ -4801,9 +4680,7 @@ $star-spacing: 5px
       order: 5
     .delivery_top
       order: 8
-    .col-lg-6.col-sm-6
-      display: flex
-      flex-direction: column
+    
   .row.sposobi
     display: none
   .choosen_item

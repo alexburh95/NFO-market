@@ -1,0 +1,63 @@
+@font-face 
+  font-family: "Montserrat"
+  font-display: swap
+  font-weight: 300
+  font-style: normal
+  src: url("../fonts/Montserrat-Light.ttf") format('truetype'), url("../fonts/Montserrat-Light.otf") format("opentype")
+      
+
+
+@font-face 
+  font-family: "Montserrat"
+  font-display: swap
+  font-weight: 400
+  font-style: normal
+  src: url("../fonts/Montserrat-Regular.ttf") format('truetype'), url("../fonts/Montserrat-Regular.otf") format("opentype")
+      
+
+@font-face 
+  font-family: "Montserrat"
+  font-display: swap
+  font-weight: 600
+  font-style: normal
+  src: url("../fonts/Montserrat-SemiBold.ttf") format('truetype'), url("../fonts/Montserrat-SemiBold.otf") format("opentype")
+
+$primary-color: #202945
+$sotka: 100%
+
+button
+  border: none
+  background: none         
+h1
+  color: $primary-color
+body
+  font-family: 'Montserrat', sans-serif
+  font-weight: 400
+
+%little_paragraph
+   font-style: normal
+   font-weight: normal
+   font-size: 11px
+   color: $primary-color
+   text-transform: uppercase
+   display: flex
+   align-items: center
+%didjest_scale
+  transform: scale(1.009)
+  transition-duration: 200ms
+  transition-timing-function: ease-in-out
+%set_sizes
+  width: 300px
+  height: 390px
+  max-width: 100%
+%scattered_row
+  display: flex
+  align-items: center
+  justify-content: space-between
+$stars: 5
+$star-spacing: 5px
+%row_span
+  display: flex
+  align-items: center
+.hidden
+  display: none !important               

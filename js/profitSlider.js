@@ -5,7 +5,29 @@
         loop: true,
         slidesPerView: 2,
         spaceBetween: 10,
-    
+        breakpoints: {
+          // when window width is >= 320px
+         
+          1020: {
+            slidesPerView: 4,
+            spaceBetween: 30
+          },
+         760: {
+            slidesPerView: 3,
+            spaceBetween: 30
+          },
+          576: {
+            slidesPerView: 2,
+            spaceBetween: 30
+          },
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 30
+          },
+        },
+        autoplay: {
+            delay: 500000000,
+          },
           on: {
             init() {
               this.el.addEventListener('mouseenter', () => {

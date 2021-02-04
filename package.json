@@ -1,0 +1,9 @@
+{
+  "prettier":{
+    "tabWidth": 2,
+    "arrowParens": "avoid",
+    "semi": false,
+    "bracketSpacing": true,
+    "singleQuote": true
+  }
+}

@@ -1,26 +1,18 @@
-"use strict";
+'use strict'
 
-let content = document.querySelector('.sort_title');
+const content = document.querySelector('.sort_title')
 const strela = document.querySelector('.down')
-let contentText = content.textContent;
-console.log(content.textContent);
+const contentText = content.textContent
+const title = document.querySelectorAll('.sort')
 
-
-const title = document.querySelectorAll('.sort');
-
-title.forEach(item=>{
-
-item.addEventListener('click',()=>{
-
-console.log(item.textContent)
-content.textContent = item.textContent;
-
-console.log(window.popup);
-window.popup.classList.toggle('hidden');
-window.arrow.classList.toggle('up');
+title.forEach(item => {
+  item.addEventListener('click', () => {
+    content.textContent = item.textContent
+    window.popup.classList.toggle('hidden')
+    window.arrow.classList.toggle('up')
+  })
 })
-})
-strela.addEventListener('click',()=>{
-    window.popup.classList.toggle('hidden');
-window.arrow.classList.toggle('up');
+strela.addEventListener('click', () => {
+  window.popup.classList.toggle('hidden')
+  window.arrow.classList.toggle('up')
 })

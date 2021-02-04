@@ -11,35 +11,35 @@
 // })
 
 const slider = new Splide('#fish-slider', {
-    perPage: 2,
-    autoWidth: true,
-    pagination: false,
-    perMove: 1,
+  perPage: 2,
+  autoWidth: true,
+  pagination: false,
+  perMove: 1,
 })
 slider.mount()
 
-const fishSlide = document.querySelector('.splide__slide.slide-with-fish');
-const fish = document.querySelector('.splide__slide.slide-with-fish svg');
-
-console.log(fish);
+const fishSlide = document.querySelector('.splide__slide.slide-with-fish')
+const fish = document.querySelector('.splide__slide.slide-with-fish svg')
 
 slider.on('move', index => {
-    if (index >= 2 && !fishSlide.classList.contains('animated-fish')) {
-        fishSlide.classList.add('animated-fish');
-        
-        fish.animate([
-            {
-                transform: 'translateX(0px)'
-            },
-            {
-                transform: 'translateX(500px)'
-            }
-        ], {
-            duration: 1500,
-            easing: 'ease-in-out',
-            delay: 300,
-            fill: 'forwards',
-            direction: 'alternate'
-        })
-    }
+  if (index >= 2 && !fishSlide.classList.contains('animated-fish')) {
+    fishSlide.classList.add('animated-fish')
+    fish.animate(
+      [
+        {
+          transform: 'translateX(0px)',
+        },
+        {
+          transform: 'translateX(500px)',
+        },
+      ],
+      {
+        duration: 1500,
+        easing: 'ease-in-out',
+        delay: 300,
+        fill: 'forwards',
+        direction: 'alternate',
+      }
+    )
+  }
 })

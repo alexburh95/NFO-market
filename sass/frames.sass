@@ -1,0 +1,91 @@
+%frames_titles
+    font-weight: 600
+    font-size: 20px
+    text-transform: uppercase
+    
+.frames
+    background-color: antiquewhite
+    padding: 50px 100px
+
+.frame_registration
+    position: relative
+    background-color: #FFFFFF
+    width: 735px
+    padding-top: 80px
+    padding-bottom: 140px
+    
+.frame__title
+    @extend %frames_titles
+    position: relative
+    margin-bottom: 90px
+    margin-left: 30px
+    &::after
+        content: ""
+        position: absolute
+        width: 89%
+        left: 0
+        height: 0.5px
+        background-color: #C3C9CF
+        bottom: -15px
+.registration_user
+    @extend %frames_titles
+    margin-bottom: 25px
+.frame_content
+    margin-left: 140px
+    margin-right: 160px
+.frames
+    .new_buyer
+        margin-top: 50px
+    form
+       
+    [type=submit]
+        svg
+            position: absolute
+            right: 40px
+          
+            
+        @extend  %row_span
+        justify-content: center
+        width: 100%
+        height: 45px
+        font-size: 11px
+        background-color: $primary-color
+        color: #ffffff
+        text-transform: uppercase
+        position: relative
+        &:disabled
+            background-color: #7B8797
+            
+
+    [type=radio]+span:before, [type=checkbox]+span:before
+        margin-right: 10px
+    .enter
+        padding-top: 35px
+     
+        input
+            display: flex
+            align-items: flex-end
+            font-size: 11px
+            width: 100%
+            background: none
+            border: none
+            border-bottom: .5px solid #202945
+        .toggled_input
+            margin-bottom: 60px
+    
+
+    .include_form.delivery_form
+        span
+            display: flex
+            align-items: center
+            margin-right: 30px
+
+.remember_me
+    a
+        text-decoration: underline
+        font-size: 12px
+    @extend %scattered_row
+    padding: 25px 0
+    span
+        @extend  %row_span
+        font-size: 12px           

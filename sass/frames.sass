@@ -88,4 +88,116 @@
     padding: 25px 0
     span
         @extend  %row_span
-        font-size: 12px           
+        font-size: 12px
+.basket_container
+    margin-left: 30px
+    margin-right: 75px
+    img
+        max-width: 100%
+
+
+.basket_row
+    h2
+        font-weight: 600
+        font-size: 20px
+        margin: 0
+        text-transform: uppercase
+    @extend %scattered_row
+    padding-bottom: 20px
+    
+    p
+        margin: 0
+        font-size: 12px
+.choosen_item_row
+    img
+        width: 45px
+        height: 75px
+    .rowspan
+        min-width: 100px
+    
+    .perecluch
+        margin-right: 40px
+        margin-left: 20px
+        span
+            padding: 0 5px
+    border-top: 0.5px solid #C3C9CF
+    padding-top: 20px
+    @extend  %scattered_row
+    .titles_container
+        max-width: 190px
+        min-width: 190px
+.fullness_scale
+    margin: 17px 0
+    height: 20px
+    border-radius: 10px
+    width: 100%
+    background-color: #C3C9CF
+    position: relative
+    .client_sum
+        background-color: $primary-color
+        font-size: 12px
+        color: #ffffff
+        border-radius: 10px 0px 0px 10px
+        width: 50%
+        height: 20px
+        display: flex
+        justify-content: flex-end
+        span
+            padding-right: 15px
+
+    .full_bar
+        position: absolute
+        top: 0
+        right: 8px
+        font-size: 12px
+        color: #ffffff
+.remains
+    margin-bottom: 300px
+    @extend %scattered_row
+    .for_sale
+        font-size: 16px
+        margin: 0
+.result
+    @extend  %scattered_row
+    button[type='submit']
+        background-color: $primary-color
+        display: flex
+        justify-content: center
+        align-items: center
+        color: #ffffff
+        height: 45px
+        width: 220px
+        position: relative
+        svg
+            position: absolute
+    .usual_price, .cheeper_price_new
+        font-size: 20px
+    p
+        margin-bottom: 15px
+        font-size: 12px
+.passwords_row
+    @extend %scattered_row        
+.new_buyer
+    .enter
+        input[type="password"]
+            width: 190px
+
+        input
+            margin-bottom: 40px
+
+
+.empty_cart
+    .reg
+        border: 0.5px solid #202945
+        background-color: #FFFFFF
+        color: $primary-color
+    button[type="submit"]
+        margin: 0 auto
+        width: 250px
+        height: 45px
+        margin-bottom: 20px
+    padding-top: 200px
+    p
+        text-align: center
+        font-size: 16px
+        margin-bottom: 25px                 

@@ -12,17 +12,15 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.js" defer></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
   <script src="https://use.fontawesome.com/0eeda8aac6.js" defer></script>
 
   <title>NFO</title>
 </head>
 
-<body>
+<body class="promos">
   <header class="header_main">
     <nav class="upper__header">
       <div class="container-fluid">
@@ -347,7 +345,39 @@
           <div class="col-lg-1"></div>
         </div>
 
-        <div class="row special">
+        <div class="row promos-slider">
+          <div class="col-12">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="skidochka">-20%</div>
+                  <img loading="lazy" src="img/akcii1.png" alt="Акция" class="akcii_img" />
+                  <h3 class="skoks_h3">Nfo Легкодоступное железо</h3>
+                  <p class="skoks_paragraph">
+                    При заказе на сайте www.norwegianfishoil.ru до 15 августа
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <div class="skidochka">-20%</div>
+                  <img loading="lazy" src="img/akcii2.png" alt="Акция" class="akcii_img" />
+                  <h3 class="skoks_h3">Ваш идеальный косметолог</h3>
+                  <p class="skoks_paragraph">
+                    Скидка -20% на NFO Омега-3 Масло криля до 1 сентября
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <img loading="lazy" src="img/akcii3.png" alt="Акция" class="akcii_img" />
+                  <h3 class="skoks_h3">Бесплатная доставка по России</h3>
+                  <p class="skoks_paragraph">
+                    При заказе на сайте www.norwegianfishoil.ru до 15 августа
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row special maxi">
           <div class="col-lg-1"></div>
           <div class="col-lg-4 col-sm-6">
             <div class="skidochka">-20%</div>
@@ -392,7 +422,7 @@
           </div>
           <div class="col-lg-1"></div>
         </div>
-        <div class="row">
+        <div class="row maxi">
           <div class="col-lg-1"></div>
           <div class="col-lg-6">
             <img loading="lazy" src="img/akcii3.png" alt="Акция" class="akcii_img" />
@@ -806,6 +836,7 @@
     </section>
     <script src="js/sticky.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="./js/promos-slider.js" defer></script>
   </footer>
 </body>
 

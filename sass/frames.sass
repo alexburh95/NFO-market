@@ -204,6 +204,16 @@
 
 
 @media only screen and (max-width: 992px)
+    .remains
+        .for_sale
+            font-size: 12px
+    .result
+        p
+            margin-bottom: 5px
+        display: block
+        button[type="submit"]
+            margin-top: 25px
+            width: 100%
     .basket_container
         margin: 0 30px
     .titles_container
@@ -214,6 +224,8 @@
         padding-top: 25px
         padding-bottom: 13px
         justify-content: initial
+        .titles_container
+          min-width: auto  
         .perecluch
             span
                 padding: 0 20px
@@ -235,9 +247,41 @@
         margin-right: 35px
     .frame_registration
         width: 84%
-.new_buyer
-    .enter
-        input[type="password"]
-            width: 45%       
+    .new_buyer
+        .enter
+            input[type="password"]
+                width: 45%       
 
 
+@media only screen and (max-width: 650px)
+    .titles_container
+        margin-left: 20px
+    .frames
+        padding: 0
+    .basket_container
+        margin: 0 10px
+        .comboset
+            font-size: 13px
+    .frame_registration
+        width: 100%
+@media only screen and (max-width: 576px)
+    .frame_content
+        margin: 0 10px
+        .include_form.delivery_form
+            flex-direction: row
+            span
+                margin-right: 25px
+    .frame__title
+        margin-left: 10px
+        font-size: 15px
+        margin-bottom: 40px
+        &::after
+            width: 95%
+    .registration_user
+        font-size: 15px
+    .choosen_item_row
+        .titles_container
+            max-width: 60%
+        align-items: flex-start
+        .usual_price, .cheeper_price_new
+            font-size: 12px                   

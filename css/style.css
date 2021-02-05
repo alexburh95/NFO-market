@@ -4720,6 +4720,10 @@ footer a {
   display: none;
 }
 
+.promos-slider {
+  display: none;
+}
+
 @media only screen and (max-width: 1700px) {
   .slider_fish .splide__slide.margin_slide {
     width: 23vw;
@@ -4769,6 +4773,7 @@ footer a {
     background-repeat: no-repeat;
     max-width: 1600px;
     margin: 0 auto;
+    margin-bottom: 30px;
   }
 
   .glowbox {
@@ -6007,6 +6012,7 @@ footer a {
     display: none !important;
   }
   .promos-slider {
+    display: block;
     margin-top: 40px;
   }
   .promos-slider .swiper-slide {
@@ -6020,6 +6026,15 @@ footer a {
 
   .swiper4 .slider_buttons .slider_title {
     font-size: 30px;
+  }
+
+  .stoks_content {
+    margin-left: 0;
+  }
+
+  .stoks_back {
+    max-height: none;
+    background-size: cover;
   }
 
   .agreement {

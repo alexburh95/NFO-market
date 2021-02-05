@@ -1,8 +1,12 @@
 ;(() => {
-  new Swiper('.promos-slides', {
+  new Swiper('.promo-swiper', {
     direction: 'horizontal',
+    loop: true,
     slidesPerView: 2,
-    spaceBetween: 30,
-    loop: true
+    breakpoints: {
+      600: {
+        slidesPerView: 1,
+      },
+    },
   })
 })()

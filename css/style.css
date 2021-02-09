@@ -3687,19 +3687,16 @@ footer a {
   display: none;
 }
 
-.back1 {
-  background-image: url("../img/stokssummer.png");
-}
-
-.back2 {
-  background-image: url("../img/stokssummer2.png");
-}
-
 .stoks_back {
-  background-repeat: no-repeat;
   max-width: 1070px;
   margin: 0 auto;
   margin-bottom: 30px;
+  position: relative;
+  padding: 0;
+}
+.stoks_back img {
+  position: absolute;
+  z-index: -1;
 }
 
 .ciferka::after {

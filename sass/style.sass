@@ -1,6 +1,6 @@
-@import general_setting
-@import header
-@import frames
+@import 'general_setting'
+@import 'header'
+@import 'frames'
 
 .disabled_js
   padding: 50px
@@ -2651,17 +2651,16 @@ footer a
   .down
     display: none
 
-.back1
-  background-image: url('../img/stokssummer.png')
-
-.back2
-  background-image: url('../img/stokssummer2.png')
-
 .stoks_back
-  background-repeat: no-repeat
   max-width: 1070px
   margin: 0 auto
   margin-bottom: 30px
+  position: relative
+  padding: 0
+
+  img
+    position: absolute
+    z-index: -1
 
 .ciferka::after
   content: "1"

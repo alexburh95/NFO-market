@@ -6032,7 +6032,6 @@ footer a {
 
   .stoks_back {
     max-height: none;
-    background-size: cover;
   }
 
   .agreement {
@@ -6040,6 +6039,77 @@ footer a {
   }
 }
 @media only screen and (max-width: 576px) {
+  .stoks_back {
+    min-height: 185px;
+    background: linear-gradient(180deg, rgba(32, 41, 69, 0) 9.9%, #202945 100%);
+    background-blend-mode: multiply;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 50px;
+  }
+  .stoks_back .orange_plashka {
+    width: 80px;
+    height: 45px;
+    font-size: 15px;
+    position: absolute;
+    top: 0;
+    right: 10%;
+  }
+  .stoks_back .stoks_content {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  .stoks_back .stoks_content_title {
+    font-size: 15px;
+    color: #fff;
+    margin-left: 15px;
+  }
+  .stoks_back .stoks_content_title br {
+    display: none;
+  }
+  .stoks_back .stoks_content_description {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  .stoks_back .stoks_content .to_cart {
+    background-color: transparent;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  .akcii_img {
+    object-fit: cover;
+  }
+
+  .skidochka {
+    left: 0;
+  }
+
+  .skoks_h3 {
+    font-size: 15px;
+    margin-top: 12px;
+    margin-bottom: 2px;
+  }
+
+  .skoks_paragraph {
+    font-size: 13px;
+  }
+
+  .promos-slider {
+    margin-top: 0;
+    margin-bottom: -30px;
+  }
+  .promos-slider .swiper-wrapper {
+    height: auto;
+  }
+
   header img {
     object-fit: contain;
     width: 100%;

@@ -2072,9 +2072,8 @@ footer a {
 .hello_popup .blue_knopka {
   margin-bottom: 30px;
 }
-.hello_popup .flex_end {
-  display: flex;
-  justify-content: flex-end;
+.hello_popup .blue_knopka .bell img {
+  width: auto;
 }
 .hello_popup div {
   text-align: center;

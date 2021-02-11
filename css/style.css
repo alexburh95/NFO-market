@@ -4809,7 +4809,7 @@ footer a {
   max-width: 100%;
   background-image: url(../img/help/header-bg.png);
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
 }
 
 @media screen and (max-width: 993px) {

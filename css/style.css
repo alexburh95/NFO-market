@@ -705,6 +705,13 @@ a svg:active .like {
   background: #F8F8F8;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+.salehits__item--description {
+  position: absolute;
+  top: 100%;
+  margin-top: 20px;
+  font-size: 14px;
 }
 
 .salehits__item__content_top {
@@ -3069,6 +3076,9 @@ footer a {
 
 .add_to_zakaz {
   margin-top: 200px;
+}
+.add_to_zakaz .col-xl-2.col-lg-3.col-sm-4.col-4 a {
+  justify-content: flex-end;
 }
 
 .recomendation {

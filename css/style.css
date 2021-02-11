@@ -5743,7 +5743,7 @@ footer a {
     margin-right: 15px;
   }
 
-  .catalog_main .breadcrumbs .row.change .sort_title, .filter_button {
+  .catalog_main .row.change .sort_title, .filter_button {
     font-size: 13px;
     color: #202945;
     text-transform: uppercase;
@@ -5776,15 +5776,15 @@ footer a {
   .catalog_main .breadcrumbs {
     padding-top: 25px;
   }
-  .catalog_main .breadcrumbs .row.change {
+  .catalog_main .row.change {
     order: -1;
     padding-top: 30px;
     flex-direction: row-reverse;
   }
-  .catalog_main .breadcrumbs .row.change .down {
+  .catalog_main .row.change .down {
     display: none;
   }
-  .catalog_main .breadcrumbs .catalog__title {
+  .catalog_main .row.change .catalog__title {
     display: none;
   }
 

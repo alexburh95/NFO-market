@@ -2808,8 +2808,11 @@ footer a {
 }
 .create_set:hover svg {
   transform: scale(1.0833);
+}
+.create_set:hover svg circle {
   fill: #6984B5;
 }
+
 .all_products {
   font-size: 12px;
   line-height: 15px;

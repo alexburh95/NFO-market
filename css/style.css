@@ -5784,7 +5784,7 @@ footer a {
   .catalog_main .row.change .down {
     display: none;
   }
-  .catalog_main .row.change .catalog__title {
+  .catalog_main .catalog__title {
     display: none;
   }
 

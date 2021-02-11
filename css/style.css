@@ -2077,8 +2077,15 @@ footer a {
   top: 0;
   right: 0;
 }
+.hello_popup .bell {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
 .hello_popup .hello_bell img {
   width: auto;
+}
+.hello_popup .hello_bell .bell {
+  margin: 0;
 }
 .hello_popup div {
   text-align: center;
@@ -2088,10 +2095,6 @@ footer a {
 }
 .hello_popup p {
   font-size: 16px;
-}
-.hello_popup .bell {
-  margin-top: 60px;
-  margin-bottom: 30px;
 }
 .hello_popup .close_popup {
   float: right;

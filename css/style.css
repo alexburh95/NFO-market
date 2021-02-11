@@ -7749,7 +7749,7 @@ input[type=search]::-webkit-search-cancel-button:hover {
     padding: 0 10px;
   }
   .search_result .add_to_cart {
-    display: none;
+    display: flex;
   }
 }
 

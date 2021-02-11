@@ -1904,7 +1904,7 @@ footer a
       transform: scale(1.0833)
 
       circle
-        fill: #6984B5
+      fill: #6984B5
 .all_products
   font-size: 12px
   line-height: 15px
@@ -2123,7 +2123,7 @@ footer a
   margin-top: 200px
   .col-xl-2.col-lg-3.col-sm-4.col-4
     a
-       justify-content: flex-end
+      justify-content: flex-end
 
 .recomendation
   margin-top: 85px
@@ -3589,7 +3589,15 @@ footer a
     font-size: 16px
 .special_header.special
   background-size: cover
+  background-position: center
   height: 300px
+  .container-fluid
+    height: 100%
+    .row
+      height: 100%
+      .col-lg-11
+        display: flex
+        align-items: center
   h1
     font-size: 32px
     color: #ffffff
@@ -3634,39 +3642,31 @@ h1
 .help
   margin-top: 140px
 
-
   & .tabs_in
     padding-bottom: 100px
-
 
   & .tabs_in a
     color: #7b8797
     text-decoration: underline
-
 
   & h2
     font-size: 20px
     text-transform: uppercase
     font-weight: bold
 
-
   & p
     padding-top: 24px
 
-
   & h2:not(:first-child)
     margin-top: 70px
-
 
   & ol
     list-style-position: inside
     padding: 0
     margin: 24px 0
 
-
   & ol li
     margin-top: 18px
-
 
   & ol img,
 
@@ -3674,19 +3674,16 @@ h1
     width: 100%
     margin-top: 18px
 
-
   & ol img.center
     width: 60%
     margin: 0 auto
     margin-top: 18px
-
 
   & .img-like
     background-color: #f8f8f8
     display: flex
     align-items: center
     padding: 20px
-
 
   & .img-like--pnone
     margin: 10px
@@ -3696,32 +3693,26 @@ h1
     font-size: 16px
     line-height: 1.4375
 
-
   & .img-like--text
     margin: 10px
     padding-left: 30px
     border-left: 1px solid #7b879766
-
 
   & p
     padding: 0
     margin: 0
     margin-top: 18px
 
-
   & #tab2 h2:not(:first-child)
     margin-top: 40px
 
-
   & strong.upper
     text-transform: uppercase
-
 
   & table
     margin-top: 18px
     font-size: 12px
     margin-bottom: 40px
-
 
   & table td,
 
@@ -3731,18 +3722,14 @@ h1
     margin-right: 10%
     padding: 10px
 
-
   & #tab3 img
     margin-top: 50px
-
 
   & form
     margin-top: 65px
 
-
   & input
     border-color: #7b8797
-
 
   & input,
 
@@ -3776,39 +3763,32 @@ textarea::placeholder
   grid-template-columns: repeat(4, 1fr)
   grid-gap: 10px
 
-
   &>div
     background-color: #e6eaee
     padding: 20px
     font-size: 12px
     text-align: center
 
-
   & .d--top p:first-child
     font-size: 25px
     font-weight: 600
-
 
   & .d--bottom p:last-child
     font-size: 16px
     font-weight: 600
 
-
   & .d--top
     margin-bottom: 15px
-
 
   & .d--bottom
     padding-top: 15px
     border-top: 1px solid #7b8797
-
 
   & p
     margin: 0
 
 .help_mobile
   display: none
-
 
   & a
     display: flex

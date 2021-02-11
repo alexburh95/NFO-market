@@ -2818,11 +2818,8 @@ footer a {
 }
 .create_set:hover svg {
   transform: scale(1.0833);
-}
-.create_set:hover svg circle {
   fill: #6984B5;
 }
-
 .all_products {
   font-size: 12px;
   line-height: 15px;
@@ -4756,7 +4753,18 @@ footer a {
 
 .special_header.special {
   background-size: cover;
+  background-position: center;
   height: 300px;
+}
+.special_header.special .container-fluid {
+  height: 100%;
+}
+.special_header.special .container-fluid .row {
+  height: 100%;
+}
+.special_header.special .container-fluid .row .col-lg-11 {
+  display: flex;
+  align-items: center;
 }
 .special_header.special h1 {
   font-size: 32px;

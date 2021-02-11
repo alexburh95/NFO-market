@@ -2074,8 +2074,8 @@ footer a {
 }
 .hello_popup .flex_end {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 30px;
+  right: 30px;
 }
 .hello_popup .bell {
   margin-top: 60px;
@@ -2085,7 +2085,7 @@ footer a {
   width: auto;
 }
 .hello_popup .hello_bell .bell {
-  margin: 0;
+  margin: 30px 0;
 }
 .hello_popup div {
   text-align: center;

@@ -1326,7 +1326,7 @@ footer a:hover {
 }
 
 .expert__name {
-  margin: 15px;
+  margin-bottom: 15px;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;

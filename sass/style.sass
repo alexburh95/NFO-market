@@ -1894,7 +1894,7 @@ footer a
       transform: scale(1.0833)
 
       circle
-        fill: #6984B5
+      fill: #6984B5
 .all_products
   font-size: 12px
   line-height: 15px
@@ -3601,6 +3601,223 @@ footer a
 
 .promos-slider
   display: none
+
+.tabs_in img
+  width: 100%
+
+.cover
+  height: 400px
+  display: flex
+  align-items: center
+  max-width: 100%
+  background-image: url(./img/help/header-bg.png)
+  background-size: cover
+
+@media screen and (max-width: 993px)
+  .cover
+    height: 200px
+
+h1
+  font-weight: 600
+
+.help
+  margin-top: 140px
+
+
+  & .tabs_in
+    padding-bottom: 100px
+
+
+  & .tabs_in a
+    color: #7b8797
+    text-decoration: underline
+
+
+  & h2
+    font-size: 20px
+    text-transform: uppercase
+    font-weight: bold
+
+
+  & p
+    padding-top: 24px
+
+
+  & h2:not(:first-child)
+    margin-top: 70px
+
+
+  & ol
+    list-style-position: inside
+    padding: 0
+    margin: 24px 0
+
+
+  & ol li
+    margin-top: 18px
+
+
+  & ol img,
+
+  & .img-like
+    width: 100%
+    margin-top: 18px
+
+
+  & ol img.center
+    width: 60%
+    margin: 0 auto
+    margin-top: 18px
+
+
+  & .img-like
+    background-color: #f8f8f8
+    display: flex
+    align-items: center
+    padding: 20px
+
+
+  & .img-like--pnone
+    margin: 10px
+    margin-right: 15px
+    font-weight: 600
+    min-width: 160px
+    font-size: 16px
+    line-height: 1.4375
+
+
+  & .img-like--text
+    margin: 10px
+    padding-left: 30px
+    border-left: 1px solid #7b879766
+
+
+  & p
+    padding: 0
+    margin: 0
+    margin-top: 18px
+
+
+  & #tab2 h2:not(:first-child)
+    margin-top: 40px
+
+
+  & strong.upper
+    text-transform: uppercase
+
+
+  & table
+    margin-top: 18px
+    font-size: 12px
+    margin-bottom: 40px
+
+
+  & table td,
+
+  & table th
+    vertical-align: top
+    width: 40%
+    margin-right: 10%
+    padding: 10px
+
+
+  & #tab3 img
+    margin-top: 50px
+
+
+  & form
+    margin-top: 65px
+
+
+  & input
+    border-color: #7b8797
+
+
+  & input,
+
+  & input::placeholder
+    font-size: 11px
+    color: #7b8797
+    padding: 7px 0
+
+textarea
+  width: 100%
+  height: 240px
+  border: 1px solid #7b8797
+  font-size: 11px
+  padding: 30px
+
+textarea::placeholder
+  font-family: 'Montserrat', sans-serif
+  text-transform: uppercase
+
+#tab4 li::marker
+  font-weight: 600
+
+#tab4 h3
+  display: inline-block
+  font-size: 16px
+  font-weight: 600
+
+.help .discounts
+  margin-top: 18px
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  grid-gap: 10px
+
+
+  &>div
+    background-color: #e6eaee
+    padding: 20px
+    font-size: 12px
+    text-align: center
+
+
+  & .d--top p:first-child
+    font-size: 25px
+    font-weight: 600
+
+
+  & .d--bottom p:last-child
+    font-size: 16px
+    font-weight: 600
+
+
+  & .d--top
+    margin-bottom: 15px
+
+
+  & .d--bottom
+    padding-top: 15px
+    border-top: 1px solid #7b8797
+
+
+  & p
+    margin: 0
+
+.help_mobile
+  display: none
+
+
+  & a
+    display: flex
+    justify-content: space-between
+
+@media screen and (max-width: 993px)
+  .account_menu.help_mobile
+    display: block
+    margin-bottom: 50px
+    margin-top: 50px
+
+  .account_menu
+    display: none
+
+  .help .col-lg-6
+    display: none
+
+  .help
+    margin-top: 0
+
 @media only screen and (max-width: 1700px)
   .slider_fish
     .splide__slide.margin_slide

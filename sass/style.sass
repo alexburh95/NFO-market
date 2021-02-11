@@ -1913,7 +1913,7 @@ footer a
       transform: scale(1.0833)
 
       circle
-      fill: #6984B5
+        fill: #6984B5
 .all_products
   font-size: 12px
   line-height: 15px
@@ -5739,3 +5739,94 @@ textarea::placeholder
 @media only screen and (max-width: 330px)
   .add_to_cart
     font-size: 9px
+
+.search
+  padding-top: 80px
+  padding-bottom: 50px
+  input
+    width: 100%
+    border: none
+    border-bottom: 0.5px solid #202945
+    padding-bottom: 10px
+    font-weight: 600
+    font-size: 32px
+    &::placeholder
+      font-weight: 600
+      font-size: 32px
+      color: $primary-color
+
+.search_result_title
+  font-size: 12px
+  margin-bottom: 5px
+
+input[type="search"]::-webkit-search-cancel-button
+  -webkit-appearance: none
+  width: 11px
+  height: 11px
+  background: url('../img/krest.svg') no-repeat
+  &:hover
+    cursor: pointer
+
+.search_menu
+  margin: 0
+  padding: 0
+  list-style: none
+  li
+    font-size: 16px
+    margin-bottom: 20px
+    &:hover
+      cursor: pointer
+
+.tab_title
+  font-size: 12px
+.search_result
+  .hidden_menu
+    display: none
+    .big_didjest, .didjest_3
+      margin-bottom: 60px
+    .col-lg-4.col-md-4.col-sm-4.col-6
+      margin-bottom: 40px
+    .salehits__item
+      .icon
+        margin-right: 20px
+    .tabs_in
+      margin-bottom: 90px
+.search_result
+  .rovno
+    display: none
+@media only screen and (max-width: 992px)
+
+  .down
+    z-index: 99
+
+    .search
+      padding-bottom: 25px
+
+    .tab_title
+      display: none
+    .search_result
+      .add_to_cart
+        display: none
+        .rovno
+          display: flex
+        .rovno
+          margin-bottom: 11px
+          position: relative
+        .hidden_menu
+          z-index: 1
+        .hidden_menu
+          display: block
+
+    .search_menu
+      display: none
+
+@media only screen and (max-width: 576px)
+  .search_result
+    .basket
+      display: none
+
+      .container-fluid
+        padding: 0 10px
+
+        .add_to_cart
+          display: none

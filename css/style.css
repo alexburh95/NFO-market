@@ -868,6 +868,7 @@ a svg:active .like {
 .grey_fon {
   background: #F8F8F8;
   padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .information {
@@ -1601,7 +1602,8 @@ input:focus {
   align-items: flex-end;
   text-transform: uppercase;
   color: #7B8797;
-  width: 90%;
+  width: 80%;
+  margin-right: 10%;
   background: none;
   border: none;
   border-bottom: 0.5px solid #C3C9CF;

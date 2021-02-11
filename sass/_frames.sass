@@ -1,301 +1,354 @@
 %frames_titles
-    font-weight: 600
-    font-size: 20px
-    text-transform: uppercase
-    
+  font-weight: 600
+  font-size: 20px
+  text-transform: uppercase
+
 .frames
-    background-color: antiquewhite
-    padding: 50px 100px
+  background-color: antiquewhite
+  padding: 50px 100px
 
 .frame_registration
-    position: relative
-    background-color: #FFFFFF
-    width: 735px
-    padding-top: 80px
-    padding-bottom: 140px
-    
+  position: relative
+  background-color: #FFFFFF
+  width: 735px
+  padding-top: 80px
+  padding-bottom: 140px
+
 .frame__title
-    @extend %frames_titles
-    position: relative
-    margin-bottom: 90px
-    margin-left: 30px
-    &::after
-        content: ""
-        position: absolute
-        width: 89%
-        left: 0
-        height: 0.5px
-        background-color: #C3C9CF
-        bottom: -15px
+  @extend %frames_titles
+  position: relative
+  margin-bottom: 90px
+  margin-left: 30px
+
+  &::after
+    content: ""
+    position: absolute
+    width: 89%
+    left: 0
+    height: 0.5px
+    background-color: #C3C9CF
+    bottom: -15px
+
 .registration_user
-    @extend %frames_titles
-    margin-bottom: 25px
+  @extend %frames_titles
+  margin-bottom: 25px
+
 .frame_content
-    margin-left: 140px
-    margin-right: 160px
+  margin-left: 140px
+  margin-right: 160px
+
 .frames
-    .new_buyer
-        margin-top: 50px
-    form
-       
-    [type=submit]
-        svg
-            position: absolute
-            right: 40px
-          
-            
-        @extend  %row_span
-        justify-content: center
-        width: 100%
-        height: 45px
-        font-size: 11px
-        background-color: $primary-color
-        color: #ffffff
-        text-transform: uppercase
-        position: relative
-        &:disabled
-            background-color: #7B8797
-            
+  .new_buyer
+    margin-top: 50px
 
-    [type=radio]+span:before, [type=checkbox]+span:before
-        margin-right: 10px
-    .enter
-        padding-top: 35px
-     
-        input
-            display: flex
-            align-items: flex-end
-            font-size: 11px
-            width: 100%
-            background: none
-            border: none
-            border-bottom: .5px solid #202945
-        .toggled_input
-            margin-bottom: 60px
-    
+  [type=submit]
+    @extend  %row_span
+    justify-content: center
+    width: 100%
+    height: 45px
+    font-size: 11px
+    background-color: $primary-color
+    color: #ffffff
+    text-transform: uppercase
+    position: relative
 
-    .include_form.delivery_form
-        span
-            display: flex
-            align-items: center
-            margin-right: 30px
+    &:disabled
+      background-color: #7B8797
+
+    svg
+      position: absolute
+      right: 40px
+
+  [type=radio]+span:before,
+  [type=checkbox]+span:before
+    margin-right: 10px
+  .enter
+    padding-top: 35px
+
+    input
+      display: flex
+      align-items: flex-end
+      font-size: 11px
+      width: 100%
+      background: none
+      border: none
+      border-bottom: .5px solid #202945
+    .toggled_input
+      margin-bottom: 60px
+
+  .include_form.delivery_form
+    span
+      display: flex
+      align-items: center
+      margin-right: 30px
 
 .remember_me
-    a
-        text-decoration: underline
-        font-size: 12px
-    @extend %scattered_row
-    padding: 25px 0
-    span
-        @extend  %row_span
-        font-size: 12px
-.basket_container
-    margin-left: 30px
-    margin-right: 75px
-    img
-        max-width: 100%
+  @extend %scattered_row
+  padding: 25px 0
 
+  a
+    text-decoration: underline
+    font-size: 12px
+
+  span
+    @extend  %row_span
+    font-size: 12px
+
+.basket_container
+  margin-left: 30px
+  margin-right: 75px
+
+  img
+    max-width: 100%
 
 .basket_row
-    h2
-        font-weight: 600
-        font-size: 20px
-        margin: 0
-        text-transform: uppercase
-    @extend %scattered_row
-    padding-bottom: 20px
-    
-    p
-        margin: 0
-        font-size: 12px
+  @extend %scattered_row
+  padding-bottom: 20px
+
+  h2
+    font-weight: 600
+    font-size: 20px
+    margin: 0
+    text-transform: uppercase
+
+  p
+    margin: 0
+    font-size: 12px
+
 .choosen_item_row
-    img
-        width: 45px
-        height: 75px
-    .rowspan
-        min-width: 100px
-    
-    .perecluch
-        margin-right: 40px
-        margin-left: 20px
-        span
-            padding: 0 5px
-    border-top: 0.5px solid #C3C9CF
-    padding-top: 20px
-    @extend  %scattered_row
-    .titles_container
-        max-width: 190px
-        min-width: 190px
+  border-top: 0.5px solid #C3C9CF
+  padding-top: 20px
+  @extend  %scattered_row
+  align-items: flex-start
+
+  img
+    width: 45px
+    height: 75px
+
+  .rowspan
+    min-width: 100px
+
+  .perecluch
+    margin-right: 40px
+    margin-left: 20px
+
+    span
+      padding: 0 5px
+
+  .titles_container
+    max-width: 190px
+    min-width: 190px
+
 .fullness_scale
-    margin: 17px 0
+  margin: 17px 0
+  height: 20px
+  border-radius: 10px
+  width: 100%
+  background-color: #C3C9CF
+  position: relative
+  .client_sum
+    background-color: $primary-color
+    font-size: 12px
+    color: #ffffff
+    border-radius: 10px 0px 0px 10px
+    width: 50%
     height: 20px
-    border-radius: 10px
-    width: 100%
-    background-color: #C3C9CF
-    position: relative
-    .client_sum
-        background-color: $primary-color
-        font-size: 12px
-        color: #ffffff
-        border-radius: 10px 0px 0px 10px
-        width: 50%
-        height: 20px
-        display: flex
-        justify-content: flex-end
-        span
-            padding-right: 15px
+    display: flex
+    justify-content: flex-end
+    span
+      padding-right: 15px
 
-    .full_bar
-        position: absolute
-        top: 0
-        right: 8px
-        font-size: 12px
-        color: #ffffff
+  .full_bar
+    position: absolute
+    top: 0
+    right: 8px
+    font-size: 12px
+    color: #ffffff
+
 .remains
-    margin-bottom: 300px
-    @extend %scattered_row
-    .for_sale
-        font-size: 16px
-        margin: 0
+  margin-bottom: 300px
+  @extend %scattered_row
+
+  .for_sale
+    font-size: 16px
+    margin: 0
+
 .result
-    @extend  %scattered_row
-    button[type='submit']
-        background-color: $primary-color
-        display: flex
-        justify-content: center
-        align-items: center
-        color: #ffffff
-        height: 45px
-        width: 220px
-        position: relative
-        svg
-            position: absolute
-    .usual_price, .cheeper_price_new
-        font-size: 20px
-    p
-        margin-bottom: 15px
-        font-size: 12px
+  @extend  %scattered_row
+
+  button[type='submit']
+    background-color: $primary-color
+    display: flex
+    justify-content: center
+    align-items: center
+    color: #ffffff
+    height: 45px
+    width: 220px
+    position: relative
+
+    svg
+      position: absolute
+
+  .usual_price,
+  .cheeper_price_new
+    font-size: 20px
+
+  p
+    margin-bottom: 15px
+    font-size: 12px
+
 .passwords_row
-    @extend %scattered_row        
+  @extend %scattered_row
+
 .new_buyer
-    .enter
-        input[type="password"]
-            width: 190px
+  .enter
+    input[type="password"]
+      width: 190px
 
-        input
-            margin-bottom: 40px
-
+    input
+      margin-bottom: 40px
 
 .empty_cart
-    .reg
-        border: 0.5px solid #202945
-        background-color: #FFFFFF
-        color: $primary-color
-    button[type="submit"]
-        margin: 0 auto
-        width: 250px
-        height: 45px
-        margin-bottom: 20px
-    padding-top: 200px
-    p
-        text-align: center
-        font-size: 16px
-        margin-bottom: 25px
+  padding-top: 200px
 
+  .reg
+    border: 0.5px solid #202945
+    background-color: #FFFFFF
+    color: $primary-color
+
+  button[type="submit"]
+    margin: 0 auto
+    width: 250px
+    height: 45px
+    margin-bottom: 20px
+  p
+    text-align: center
+    font-size: 16px
+    margin-bottom: 25px
 
 @media only screen and (max-width: 992px)
-    .remains
-        .for_sale
-            font-size: 12px
-    .result
-        p
-            margin-bottom: 5px
-        display: block
-        button[type="submit"]
-            margin-top: 25px
-            width: 100%
-    .basket_container
-        margin: 0 30px
+  .remains
+    .for_sale
+      font-size: 12px
+
+  .result
+    display: block
+
+    p
+      margin-bottom: 5px
+
+    button[type="submit"]
+      margin-top: 25px
+      width: 100%
+
+  .basket_container
+    margin: 0 30px
+
+  .titles_container
+    margin-left: 40px
+    min-width: auto
+
+  .choosen_item_row
+    position: relative
+    padding-top: 25px
+    padding-bottom: 13px
+    justify-content: initial
+
     .titles_container
-        margin-left: 40px
-        min-width: auto
-    .choosen_item_row
-        position: relative
-        padding-top: 25px
-        padding-bottom: 13px
-        justify-content: initial
-        .titles_container
-          min-width: auto  
-        .perecluch
-            span
-                padding: 0 20px
-            position: absolute
-            right: 0
-            bottom: 10px
-            margin: 0
-            button
-                padding: 0
+      min-width: auto
 
-        .ikonki
-            position: absolute
-            right: 0
-            top: 25%
-        .final_price
-            display: none
-    .frame_content
-        margin-left: 30px
-        margin-right: 35px
-    .frame_registration
-        width: 84%
-    .new_buyer
-        .enter
-            input[type="password"]
-                width: 45%       
+    .perecluch
+      position: absolute
+      right: 0
+      bottom: 10px
+      margin: 0
 
+      span
+        padding: 0 20px
+
+      button
+        padding: 0
+
+    .ikonki
+      position: absolute
+      right: 0
+      top: 25%
+
+    .final_price
+      display: none
+
+  .frame_content
+    margin-left: 30px
+    margin-right: 35px
+
+  .frame_registration
+    width: 84%
+
+  .new_buyer
+    .enter
+      input[type="password"]
+        width: 45%
 
 @media only screen and (max-width: 650px)
-    .titles_container
-        margin-left: 20px
-    .frames
-        padding: 0
-    .basket_container
-        margin: 0 10px
-        .comboset
-            font-size: 13px
-    .frame_registration
-        width: 100%
+  .titles_container
+    margin-left: 20px
+
+  .frames
+    padding: 0
+
+  .basket_container
+    margin: 0 10px
+
+    .comboset
+      font-size: 13px
+
+  .frame_registration
+    width: 100%
+
 @media only screen and (max-width: 576px)
-    .remember_me
-        span
-            font-size: 9px
-    .result
-        .usual_price, .cheeper_price_new
-            font-size: 15px
-    .remains
-        margin-bottom: 40px
-        .for_sale
-            font-size: 10px
-            width: 42%
-    .frame_content
-        margin: 0 10px
-        .include_form.delivery_form
-            flex-direction: row
-            span
-                margin-right: 25px
-    .frame__title
-        margin-left: 10px
-        font-size: 15px
-        margin-bottom: 40px
-        &::after
-            width: 95%
-    .registration_user
-        font-size: 15px
-    .choosen_item_row
-        .perecluch
-            span
-                padding: 0 12px
-        .titles_container
-            max-width: 60%
-        align-items: flex-start
-        .usual_price, .cheeper_price_new
-            font-size: 12px                   
+  .remember_me
+
+    span
+      font-size: 9px
+
+  .result
+    .usual_price,
+    .cheeper_price_new
+      font-size: 15px
+
+  .remains
+    margin-bottom: 40px
+
+    .for_sale
+      font-size: 10px
+      width: 42%
+
+  .frame_content
+    margin: 0 10px
+
+    .include_form.delivery_form
+      flex-direction: row
+
+      span
+        margin-right: 25px
+
+  .frame__title
+    margin-left: 10px
+    font-size: 15px
+    margin-bottom: 40px
+
+    &::after
+      width: 95%
+
+  .registration_user
+    font-size: 15px
+
+  .choosen_item_row
+    .perecluch
+      span
+        padding: 0 12px
+    .titles_container
+      max-width: 60%
+      align-items: flex-start
+    .usual_price, .cheeper_price_new
+      font-size: 12px

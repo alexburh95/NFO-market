@@ -5479,6 +5479,7 @@ textarea::placeholder {
   }
 
   .konsulat_row_mini {
+    margin-left: 16px;
     font-size: 13px;
     color: #7B8797;
   }

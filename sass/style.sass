@@ -718,6 +718,12 @@ footer a:hover
   text-transform: uppercase
   color: $primary-color
 
+  sup
+    font-weight: 400
+    font-size: 16px
+    color: #202945
+    top: -20px
+
 .konsulat sup
   display: inline-block
   padding-top: 10px
@@ -3694,6 +3700,23 @@ input[type="search"]::-webkit-search-cancel-button
   .rovno
     display: none
 
+.reminder_alert
+  background-color: #ffe09a
+  font-weight: 600
+  font-size: 16px
+  margin-top: 20px
+  padding: 20px
+  line-height: 20px
+  display: flex
+
+  img
+    width: 28px
+    margin-left: 20px
+
+  p
+    margin-left: 20px
+    margin-bottom: 0
+
 @media screen and (max-width: 993px)
   .cover
     height: 200px
@@ -3916,6 +3939,9 @@ textarea::placeholder
     padding-top: 14px
     padding-bottom: 12px
 
+  .tabs_title
+    font-size: 16px
+
 @media only screen and (max-width: 1370px)
   .menu__item:hover::after
     top: 93px
@@ -4011,6 +4037,9 @@ textarea::placeholder
     .finish_description
       font-size: 14px
 
+  .tabs_title
+    font-size: 16px
+
 @media only screen and (max-width: 1150px)
   .row_summ.bigs
     flex-direction: column
@@ -4079,6 +4108,9 @@ textarea::placeholder
       padding: 0 20px
   .your_zakazes
     padding: 30px 20px
+
+  .tabs_title
+    font-size: 14px
 
   .hello_popup
     width: 100%
@@ -4159,10 +4191,6 @@ textarea::placeholder
   .partner__title
     text-align: center
     margin-top: 50px
-  .konsulat_row_mini
-    margin-left: 16px
-    font-size: 13px
-    color: #7B8797
   .sales
     display: flex
     .hits_price
@@ -4231,6 +4259,12 @@ textarea::placeholder
           align-items: center
           justify-content: space-between
           margin-bottom: 25px
+
+  .konsulat_row_mini
+    font-size: 13px
+    color: #7B8797
+    &.mini
+      padding-left: 16px
 
   .favorit
 
